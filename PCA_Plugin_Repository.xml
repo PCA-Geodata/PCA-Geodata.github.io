@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<plugins>
+    <pyqgis_plugin name="Raster to gpkg converter" version="0.2">
+        <description>This plugin shows sensitive data</description>
+        <homepage>www.gisisfun.com</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <file_name>raster_to_gpkg_converter.zip</file_name>
+        <author_name>Valerio Pinna</author_name>
+        <download_url>https://github.com/ValPinnaSardinia/ValPinnaSardinia.github.io/blob/main/dist/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</download_url>
+    </pyqgis_plugin>
+</plugins>
+

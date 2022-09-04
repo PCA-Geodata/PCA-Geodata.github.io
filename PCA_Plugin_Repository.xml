@@ -1,13 +1,20 @@
 <?xml version="1.0"?>
 <plugins>
     <pyqgis_plugin name="Raster to GPKG converter" version="0.1">
-        <description>This plugin do stuff with data</description>
+        <description>This plugin converts any raster to a GeoPackage. It builds also the piramids.</description>
+        <about> This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </about>
         <homepage>www.gisisfun.com</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <file_name>raster_to_gpkg_converter.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/blob/main/downloads/raster_to_gpkg_converter/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
-        <download_url>https://github.com/ValPinnaSardinia/ValPinnaSardinia.github.io/blob/main/dist/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</download_url>
+        <tracker>http://bugs</tracker>
+        <repository>=http://repo</repository>
+        <download_url>https://PCA-Geodata.github.io/blob/main/downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
     </pyqgis_plugin>
 </plugins>
+
 
 

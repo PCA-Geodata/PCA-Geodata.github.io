@@ -6,13 +6,15 @@
         <homepage>www.gisisfun.com</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <file_name>raster_to_gpkg_converter.zip</file_name>
-        <icon> https://PCA-Geodata.github.io/blob/main/downloads/raster_to_gpkg_converter/icon.png</icon>
+        <icon> https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
         <tracker>http://bugs</tracker>
         <repository>=http://repo</repository>
-        <download_url>https://PCA-Geodata.github.io/blob/main/downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</download_url>
+        <download_url>https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</download_url>
         <deprecated>False</deprecated>
         <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2022-09-04</update_date>
     </pyqgis_plugin>
 </plugins>
 

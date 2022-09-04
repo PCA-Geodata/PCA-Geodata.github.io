@@ -5,7 +5,8 @@
         <about> This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </about>
         <homepage>www.gisisfun.com</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <file_name>raster_to_gpkg_converter.zip</file_name>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>raster_to_gpkg_converter.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
         <tracker>http://bugs</tracker>
@@ -26,7 +27,8 @@
         <about> The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format.</about>
         <homepage>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <file_name>replace_geometry.zip</file_name>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>replace_geometry.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/replace_geometry/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
         <tracker>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues</tracker>

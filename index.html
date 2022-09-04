@@ -1,158 +1,99 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-<xsl:template match="PCA_Plugin_Repository">
-
+<!DOCTYPE html>
 <html>
-<head>
-<title>PCA QGIS Plugins Repository</title>
-<style>
-    body  {
-      font-family:Verdana, Arial, Helvetica, sans-serif;
-      background-color: #fefefe;
-     }
-    div.plugin {
-     background-color:#999999;
-     border:1px solid #000000;
-     clear:both;
-     display:block;
-     padding:0 0 0.5em;
-     margin:1em;
-    }
-    div.head {
-      background-color:#cccccc;
-      border-bottom-width:0;
-      color:#0;
-      display:block;
-      font-size:200%;
-      font-weight:bold;
-      margin:0;
-      padding:0.3em 1em;
-    }
-    div.description{
-      display: block;
-      float:none;
-      margin:0;
-      text-align: left;
-      padding:0.2em 0.5em 0.4em;
-      color: black;
-      font-size:130%;
-      font-weight:normal;
-      font-style: italic;
-    }
-     div.about{
-      display: block;
-      float:none;
-      margin:0;
-      text-align: left;
-      padding:0.2em 0.5em 0.4em;
-      color: black;
-      font-size:110%;
-      font-weight:bold;
-    }
-    div.tags{
-      padding:0 0 0 1em;
-      font-size:85%;
-      font-weight:normal;
-    }
-    div.download, div.author, div.branch{
-      font-size: 80%;
-      padding: 0em 0em 0em 1em;
-    }
-    h1{
-        font-size: 300%;
-    }
-</style>
-
-</head>
-<body>
-<h1>PCA QGIS Plugins Repository</h1>
-
-<xsl:for-each select="/plugins/pyqgis_plugin">
-<div class="plugin">
-<div class="head">
-<!--
-<xsl:element name="a">
-<xsl:attribute name="href">
-<xsl:value-of select="homepage" />
-</xsl:attribute>
--->
-<xsl:value-of select="@name" /> : <xsl:value-of select="@version" />
-<!--
-</xsl:element>
--->
-</div>
-<div class="description">
-<xsl:value-of select="description" />
-</div>
-<div class="about">
-<xsl:value-of select="about" />
-</div>
-<div class="tags">
-<b>Tags:</b>&#160;
-<xsl:value-of select="tags" />
-</div>
-<div class="download">
-<b>Download:</b>&#160;
-<xsl:element name="a">
- <xsl:attribute name="href">
-  <xsl:value-of select="download_url" />
- </xsl:attribute>
- <xsl:value-of select="file_name" />
-</xsl:element>
-</div>
-<div class="author">
-<b>Author:</b>&#160;<xsl:value-of select="author_name" />
-</div>
-<div class="author">
-<b>Version:</b>&#160;<xsl:value-of select="version" />
-</div>
-<div class="branch">
-<b>Experimental:</b>&#160;<xsl:value-of select="experimental" />
-</div>
-<div class="branch">
-<b>Deprecated:</b>&#160;<xsl:value-of select="deprecated" />
-</div>
-<div class="author">
-<b>Minimum QGIS Version:</b>&#160;<xsl:value-of select="qgis_minimum_version" />
-</div>
-<div class="author">
-<b>Maximum QGIS Version:</b>&#160;<xsl:value-of select="qgis_maximum_version" />
-</div>
-<div class="author">
-<b>Home page:</b>&#160;
-<xsl:element name="a">
- <xsl:attribute name="href">
-  <xsl:value-of select="homepage" />
- </xsl:attribute>
- <xsl:value-of select="homepage" />
-</xsl:element>
-</div>
-<div class="author">
-<b>Tracker:</b>&#160;
-<xsl:element name="a">
- <xsl:attribute name="href">
-  <xsl:value-of select="tracker" />
- </xsl:attribute>
- <xsl:value-of select="tracker" />
-</xsl:element>
-</div>
-<div class="author">
-<b>Repository:</b>&#160;
-<xsl:element name="a">
- <xsl:attribute name="href">
-  <xsl:value-of select="repository" />
- </xsl:attribute>
- <xsl:value-of select="repository" />
-</xsl:element>
-</div>
-
-
-</div>
-</xsl:for-each>
-</body>
-</html>
-
-</xsl:template>
-
-</xsl:stylesheet>
+	<head>
+		<meta charset='UTF-8'>
+			<title>XML To HTML using codebeautify.org</title>
+		</head>
+		<body>
+			<table border=1>
+				<thead>
+					<tr>
+						<th>description</th>
+						<th>about</th>
+						<th>homepage</th>
+						<th>qgis_minimum_version</th>
+						<th>qgis_maximum_version</th>
+						<th>file_name</th>
+						<th>icon</th>
+						<th>author_name</th>
+						<th>tracker</th>
+						<th>repository</th>
+						<th>download_url</th>
+						<th>deprecated</th>
+						<th>experimental</th>
+						<th>uploaded_by</th>
+						<th>update_date</th>
+						<th>tags</th>
+						<th>category</th>
+						<th>_name</th>
+						<th>_version</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>This plugin converts any raster to a GeoPackage. It builds also the piramids.</td>
+						<td>This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids.</td>
+						<td>www.gisisfun.com</td>
+						<td>3.10</td>
+						<td>3.99</td>
+						<td>raster_to_gpkg_converter.zip</td>
+						<td>https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/icon.png</td>
+						<td>Valerio Pinna</td>
+						<td>http://bugs</td>
+						<td>=http://repo</td>
+						<td>https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</td>
+						<td>False</td>
+						<td>False</td>
+						<td>Valerio Pinna</td>
+						<td>2022-09-04</td>
+						<td>PCA, raster, piramids, gpkg, conversion</td>
+						<td>Raster</td>
+						<td>Raster to GPKG converter</td>
+						<td>0.1</td>
+					</tr>
+					<tr>
+						<td>Replaces a geometry keeping the attributes unchanged.</td>
+						<td>The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format.</td>
+						<td>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</td>
+						<td>3.10</td>
+						<td>3.99</td>
+						<td>replace_geometry.zip</td>
+						<td>https://PCA-Geodata.github.io/downloads/replace_geometry/icon.png</td>
+						<td>Valerio Pinna</td>
+						<td>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues</td>
+						<td>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</td>
+						<td>https://PCA-Geodata.github.io/downloads/replace_geometry/replace_geometry.zip</td>
+						<td>False</td>
+						<td>False</td>
+						<td>Valerio Pinna</td>
+						<td>2022-09-04</td>
+						<td>attribute, digitizing, geometry, point, polygon, polyline, replace</td>
+						<td>Plugins</td>
+						<td>Replace Geometry</td>
+						<td>1.3</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+					</tr>
+				</tbody>
+			</table>
+		</body>
+	</html>

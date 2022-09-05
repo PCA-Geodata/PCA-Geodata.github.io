@@ -28,7 +28,7 @@ header {
   background-color: #00008B;
   padding: 30px;
   text-align: left;
-  font-size: 35px;
+  font-size: 25px;
   color: white;
 }
 
@@ -43,10 +43,9 @@ nav {
 
 /* Style the list inside the menu */
 nav ul {
-  list-style-type: space-counter;
-  border: 2px solid black;
-  border-radius: 5px;
+  list-style-type: none;
   padding: 0;
+  font-size: 12px;
 }
 
 article_odd{
@@ -61,7 +60,7 @@ article_even {
   float: left;
   padding: 20px;
   width: 85%;
-  background-color: #8FBC8F;
+  background-color:  #ccccff;
 <!--   height: 300px; /* only for demonstration, should be removed */ -->
 }
 
@@ -88,25 +87,37 @@ footer {
   }
 }
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel='stylesheet' href='../leaflet/leaflet.css'>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: black;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+ <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </style>
 </head>
 <body>
 
 <header>
   <div id="container" style="white-space:nowrap">
-
     <div id="image" style="display:inline;">
-        <img src="images/PCA logo 300dpi square.jpg" width="100" height="100"/>
+        <img src="images/PCA logo 300dpi square.jpg" width="75" height="75"/>
     </div>
-
     <div id="texts" style="display:inline; white-space:nowrap;"> 
         <strong>PCA QGIS Plugin Repository</strong>
     </div>
 	
 	<div id="image" style="display:inline;">
-        <img src="images/qgis-icon_anita02.png"  width="100" height="100"/>
+        <img src="images/qgis-icon_anita02.png"  width="75" height="75"/>
     </div>
 
 </div>
@@ -115,9 +126,14 @@ footer {
 <section>
   <nav>
     <ul>
-      <li><a href="index.html#Raster to GPKG converter"><img src="raster_to_gpkg_converter/icon.png" width="25" height="25"/>Raster to GPKG converter</a></li>
-      <li><a href="index.html#Replace Geometry"><img src="downloads/replace_geometry/icon.png" width="25" height="25"/>Replace Geometry</a></li>
-    </ul>
+      <li><a href="index.html#Raster to GPKG converter"><img src="downloads/raster_to_gpkg_converter/icon.png" width="25" height="25"/>Raster to GPKG converter</a></li>
+      <br>
+	  <li><a href="index.html#Replace Geometry"><img src="downloads/replace_geometry/icon.png" width="25" height="25"/>Replace Geometry</a></li>
+	  <br>
+	  <li><a href="index.html#PCA Geomax Survey Processing"><img src="downloads/pca_geomax_survey_processing/icon.png" width="25" height="25"/>PCA Geomax Survey Processing</a></li>
+	
+	
+	</ul>
   </nav>
   
  
@@ -130,22 +146,22 @@ footer {
   
   <article_odd>
     <div id='Raster to GPKG converter'><a name='Raster to GPKG converter'></a></div>
-	<h1><img src="images/R2GPKG_icon.png" width="100" height="100"/>	Raster to GPKG converter</h1>
-	
-	
-	
+	<h1><img src="downloads/raster_to_gpkg_converter/icon.png" width="100" height="100"/>	Raster to GPKG converter</h1>
+
 	<p>This plugin converts any raster to a GeoPackage. It builds also the piramids.</p>
 	
 	<div>  
 		<button class="btn"><i class="fa fa-download"></i> 
 		<a href="downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip"download>Download</button></a>
+
 	</div>
     
 	<br> 
-	<p><strong>About</strong> This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </p>
+	<p><strong>About</strong> <br>This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </p>
         <br>
 		<p><strong>Version: </strong> 0.1</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Author email: </strong>vpinna@pre-construct.com</p>
 		<p><strong>Homepage:</strong>www.</p>
         <p><strong>Bug tracker: </strong> http://bugs</p>
         <p><strong>Repository: </strong> http://repo</p>
@@ -170,10 +186,11 @@ footer {
 	</div>
     
 	<br> 
-	<p><strong>About</strong> The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format. </p>
+	<p><strong>About</strong> <br>The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format. </p>
         <br>
 		<p><strong>Version: </strong> 1.3</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Author email: </strong>vpinna@pre-construct.com</p>
 		<p><strong>Homepage:</strong>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</p>
         <p><strong>Bug tracker: </strong> https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues</p>
         <p><strong>Repository: </strong> https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</p>
@@ -184,17 +201,49 @@ footer {
 	
   </article_even>
   
+<article_odd>
+    <div id='PCA Geomax Survey Processing'><a name='PCA Geomax Survey Processing'></a></div>
+	<h1><img src="downloads/pca_geomax_survey_processing/icon.png" width="100" height="100"/>	PCA Geomax Survey Processing</h1>
+
+	<p>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</p>
+	
+	<div>  
+		<button class="btn"><i class="fa fa-download"></i> 
+		<a href="downloads/pca_geomax_survey_processingr/pca_geomax_survey_processing.zip"download>Download</button></a>
+
+	</div>
+    
+	<br> 
+	<p><strong>About</strong> <br>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.<br>
+	
+
+	  It is a component of the new DRS/GIS integrated data management system, and it is based both in the new Geomax codelist system and in the raw survey data exported on shapefile format. <br>
+	  
+	  <br>
+	  The current version of the plugin is compatible with the Geomax codelist version draft 4.2. A dedicated help in the toolbar provides more inforamtions and detailed use procedure. </p>
+        <br>
+		<p><strong>Version: </strong> 1.0</p>
+		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Author email: </strong>vpinna@pre-construct.com</p>
+		<p><strong>Homepage:</strong>www.</p>
+        <p><strong>Bug tracker: </strong> http://bugs</p>
+        <p><strong>Repository: </strong> http://repo</p>
+
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
+		<p><strong>Last update:</strong> 2022-09-05</p>
+		<p><strong>Tags:</strong>PCA, Geomax, survey, processing, DRS</p>
+  </article_odd>
+
 
 <!-- add here the next article/plugin
  -->
 
   
-  
 </section>
 
 
 <footer>
-  <p>Footer</p>
+  <p>For any further information or plugin development requests contact <strong>vpinna@pre-construct.com</strong></p>
 </footer>
 
 </body>

@@ -1,99 +1,201 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset='UTF-8'>
-			<title>XML To HTML using codebeautify.org</title>
-		</head>
-		<body>
-			<table border=1>
-				<thead>
-					<tr>
-						<th>description</th>
-						<th>about</th>
-						<th>homepage</th>
-						<th>qgis_minimum_version</th>
-						<th>qgis_maximum_version</th>
-						<th>file_name</th>
-						<th>icon</th>
-						<th>author_name</th>
-						<th>tracker</th>
-						<th>repository</th>
-						<th>download_url</th>
-						<th>deprecated</th>
-						<th>experimental</th>
-						<th>uploaded_by</th>
-						<th>update_date</th>
-						<th>tags</th>
-						<th>category</th>
-						<th>_name</th>
-						<th>_version</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>This plugin converts any raster to a GeoPackage. It builds also the piramids.</td>
-						<td>This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids.</td>
-						<td>www.gisisfun.com</td>
-						<td>3.10</td>
-						<td>3.99</td>
-						<td>raster_to_gpkg_converter.zip</td>
-						<td>https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/icon.png</td>
-						<td>Valerio Pinna</td>
-						<td>http://bugs</td>
-						<td>=http://repo</td>
-						<td>https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip</td>
-						<td>False</td>
-						<td>False</td>
-						<td>Valerio Pinna</td>
-						<td>2022-09-04</td>
-						<td>PCA, raster, piramids, gpkg, conversion</td>
-						<td>Raster</td>
-						<td>Raster to GPKG converter</td>
-						<td>0.1</td>
-					</tr>
-					<tr>
-						<td>Replaces a geometry keeping the attributes unchanged.</td>
-						<td>The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format.</td>
-						<td>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</td>
-						<td>3.10</td>
-						<td>3.99</td>
-						<td>replace_geometry.zip</td>
-						<td>https://PCA-Geodata.github.io/downloads/replace_geometry/icon.png</td>
-						<td>Valerio Pinna</td>
-						<td>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues</td>
-						<td>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</td>
-						<td>https://PCA-Geodata.github.io/downloads/replace_geometry/replace_geometry.zip</td>
-						<td>False</td>
-						<td>False</td>
-						<td>Valerio Pinna</td>
-						<td>2022-09-04</td>
-						<td>attribute, digitizing, geometry, point, polygon, polyline, replace</td>
-						<td>Plugins</td>
-						<td>Replace Geometry</td>
-						<td>1.3</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-					</tr>
-				</tbody>
-			</table>
-		</body>
-	</html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@counter-style thumbs {
+  system: cyclic;
+  symbols: "\1F44D";
+  suffix: " ";
+}
+
+ul {
+  list-style: thumbs;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #00008B;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 2000px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: space-counter;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0;
+}
+
+article_odd{
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+<!--   height: 300px; /* only for demonstration, should be removed */ -->
+}
+
+article_even {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #8FBC8F;
+<!--   height: 300px; /* only for demonstration, should be removed */ -->
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel='stylesheet' href='../leaflet/leaflet.css'>
+</style>
+</head>
+<body>
+
+<header>
+  <div id="container" style="white-space:nowrap">
+
+    <div id="image" style="display:inline;">
+        <img src="images/PCA logo 300dpi square.jpg" width="100" height="100"/>
+    </div>
+
+    <div id="texts" style="display:inline; white-space:nowrap;"> 
+        <strong>PCA QGIS Plugin Repository</strong>
+    </div>
+	
+	<div id="image" style="display:inline;">
+        <img src="images/qgis-icon_anita02.png"  width="100" height="100"/>
+    </div>
+
+</div>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html#Raster to GPKG converter"><img src="raster_to_gpkg_converter/icon.png" width="25" height="25"/>Raster to GPKG converter</a></li>
+      <li><a href="index.html#Replace Geometry"><img src="downloads/replace_geometry/icon.png" width="25" height="25"/>Replace Geometry</a></li>
+    </ul>
+  </nav>
+  
+ 
+  
+  
+
+
+
+
+  
+  <article_odd>
+    <div id='Raster to GPKG converter'><a name='Raster to GPKG converter'></a></div>
+	<h1><img src="images/R2GPKG_icon.png" width="100" height="100"/>	Raster to GPKG converter</h1>
+	
+	
+	
+	<p>This plugin converts any raster to a GeoPackage. It builds also the piramids.</p>
+	
+	<div>  
+		<button class="btn"><i class="fa fa-download"></i> 
+		<a href="downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip"download>Download</button></a>
+	</div>
+    
+	<br> 
+	<p><strong>About</strong> This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </p>
+        <br>
+		<p><strong>Version: </strong> 0.1</p>
+		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Homepage:</strong>www.</p>
+        <p><strong>Bug tracker: </strong> http://bugs</p>
+        <p><strong>Repository: </strong> http://repo</p>
+
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
+		<p><strong>Last update:</strong> 2022-09-04</p>
+		<p><strong>Tags:</strong>PCA, raster, piramids, gpkg, conversion</p>
+  </article_odd>
+  
+  
+  
+  <article_even>
+  
+     <div id='Replace Geometry'><a name='Replace Geometry'></a></div>
+	<h1><img src="downloads/replace_geometry/icon.png" width="100" height="100"/>	Replace Geometry</h1>
+	
+	<p>Replaces a geometry keeping the attributes unchanged.</p>
+	
+	<div>  
+		<button class="btn"><i class="fa fa-download"></i> 
+		<a href="downloads/replace_geometry/replace_geometry.zip"download>Download</button></a>
+	</div>
+    
+	<br> 
+	<p><strong>About</strong> The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format. </p>
+        <br>
+		<p><strong>Version: </strong> 1.3</p>
+		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Homepage:</strong>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</p>
+        <p><strong>Bug tracker: </strong> https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues</p>
+        <p><strong>Repository: </strong> https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</p>
+
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
+		<p><strong>Last update:</strong> 2022-09-04</p>
+		<p><strong>Tags: </strong>attribute, digitizing, geometry, point, polygon, polyline, replace</p>
+	
+  </article_even>
+  
+
+<!-- add here the next article/plugin
+ -->
+
+  
+  
+</section>
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

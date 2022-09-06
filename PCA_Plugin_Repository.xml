@@ -16,7 +16,7 @@
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
 		<update_date>2022-09-04</update_date>
-		<tags>PCA, raster, piramids, gpkg, conversion</tags>
+		<tags>PCA, raster, piramids, gpkg, conversion. orthophoto</tags>
 		<category>Raster</category>
     </pyqgis_plugin>
 
@@ -39,7 +39,7 @@
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
 		<update_date>2022-09-04</update_date>
-		<tags>attribute, digitizing, geometry, point, polygon, polyline, replace</tags>
+		<tags>PCA, attribute, digitizing, geometry, point, polygon, polyline, replace</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	

@@ -67,7 +67,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="Evaluation Trenches Generator" version="1.01">
+	<pyqgis_plugin name="Evaluation Trenches Generator" version="1.02">
         <description>This plugin provide a set of tools to generates trenches for archaeological evaluations.</description>
         <about> This plugin provide a set of tools to generates trenches for archaeological evaluations and to generate the necessary files to configurate the GNSS setout.</about>
         <homepage>https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin</homepage>

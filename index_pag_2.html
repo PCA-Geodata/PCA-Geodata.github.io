@@ -23,7 +23,7 @@ ul {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  
+  background-color: #1C4165;
 }
 
 /* Style the header */
@@ -41,8 +41,8 @@ header {
 nav {
   float: left;
   width: 15%;
-  height: 700px; /* only for demonstration, should be removed */
-  background-color: #e0ebeb;;
+<!--   height: 3000px; /* only for demonstration, should be removed */ -->
+  background-color: #1C4165;;
   padding: 20px;
 }
 
@@ -58,8 +58,30 @@ article_odd{
   float: left;
   padding: 20px;
   width: 85%;
-  background-color: #f1f1f1;
+  background-color: #193A5B;
+  color: white;
 <!--   height: 300px; /* only for demonstration, should be removed */ -->
+}
+
+a:link {
+  color: #8091ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #8091ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #e6e6e6;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #e6e6e6;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 article_even {
@@ -67,7 +89,8 @@ article_even {
   float: left;
   padding: 20px;
   width: 85%;
-  background-color:  #fff7e6;
+  background-color:  #1C4165;
+  color: white;
 <!--   height: 300px; /* only for demonstration, should be removed */ -->
 }
 
@@ -80,18 +103,13 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #223B5B;
   width: 100%;
   padding: 5px;
   text-align: center;
   color: white;
+  
 }
-
-_picture {
-width: 25%;
-
-}
-
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 700px) {
@@ -113,11 +131,18 @@ width: 25%;
   }
 }
 
+.btn {
+  background-color: Light-Grey;
+  border: ridge;
+  color: black;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 10px;
+}
 
-@media (max-width: 700px) {
-  picture {
-    width:75%;
-  }
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }
 
 
@@ -129,11 +154,10 @@ width: 25%;
 </style>
 </head>
 <body>
-
 <header>
-  <div id="container" style="white-space:nowrap; background-color: #0A1876;">
+  <div id="container" style="white-space:nowrap; background-color: #223B5B;">
     <div id="image" style="display:inline;">
-        <img src="images/PCA logo 300dpi square.jpg" width="75" height="75"/>
+        <img src="images/PCA logo 300dpi square.png" width="75" height="75"/>
     </div>
     <div id="texts" style="display:inline; white-space:nowrap;"> 
         <strong>PCA QGIS Plugin Repository</strong>
@@ -162,7 +186,7 @@ width: 25%;
 <section>
 <article_odd>  
 
-<h1><strong>## How to use on QGIS.</strong></h1>
+<h1><strong>How to use on QGIS.</strong></h1>
 <br>
 <p>The repository can be also added to the Plugin Repositories on the QGIS Plugin Manager.</p>
 

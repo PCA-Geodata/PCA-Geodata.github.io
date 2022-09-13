@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PCA QGIS Plugin Repository</title>
+<link rel="icon" type="image/x-icon" href="https://www.pre-construct.com/wp-content/uploads/2021/09/favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@counter-style thumbs {
+  system: cyclic;
+  symbols: "\1F44D";
+  suffix: " ";
+}
+
+ul {
+  list-style: thumbs;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/* Style the header */
+header {
+  <!-- background-color: #00008B; -->
+  padding: 3px;
+  width: 100%;
+  <!-- height: 100px; -->
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 700px; /* only for demonstration, should be removed */
+  background-color: #e0ebeb;;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+article_odd{
+  font-size: 2vm;
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+<!--   height: 300px; /* only for demonstration, should be removed */ -->
+}
+
+article_even {
+  font-size: 2vm;
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color:  #fff7e6;
+<!--   height: 300px; /* only for demonstration, should be removed */ -->
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+_picture {
+width: 25%;
+
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 700px) {
+  nav, article_odd, article_even, header {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  article_odd, article_even, footer, nav ul {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    font-size: 3vw;
+  }
+}
+
+
+@media (max-width: 700px) {
+  picture {
+    width:75%;
+  }
+}
+
+
+
+
+ <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+</head>
+<body>
+
+<header>
+  <div id="container" style="white-space:nowrap; background-color: #0A1876;">
+    <div id="image" style="display:inline;">
+        <img src="images/PCA logo 300dpi square.jpg" width="75" height="75"/>
+    </div>
+    <div id="texts" style="display:inline; white-space:nowrap;"> 
+        <strong>PCA QGIS Plugin Repository</strong>
+    </div>
+	
+	<div id="image" style="display:inline;" >
+        <img src="images/qgis-icon_anita02.png"  width="75" height="75"/>
+    </div>
+
+</div>
+</header>
+<aside>
+<nav>
+    <ul>
+
+      <li><a href="index.html">Home</a></li>
+      
+
+	
+	
+	
+	
+	</ul>
+  </nav>
+  </aside>
+<section>
+<article_odd>  
+
+<h1><strong>## How to use on QGIS.</strong></h1>
+<br>
+<p>The repository can be also added to the Plugin Repositories on the QGIS Plugin Manager.</p>
+
+
+<p>To add the repository to QGIS: "Plugins" - "Manage and install plugins..." - "Settings" - "Add...".</p>
+
+<br>
+<p><strong>Name:</strong> PCA QGIS Plugin Repository</p>
+<p><strong>URL:</strong> https://pca-geodata.github.io/PCA_Plugin_Repository.xml </p>
+<br>
+
+
+<img src="images/QGIS_repo_adding.png"  style="max-width:100%;height:auto;"> 
+
+
+</article_odd> 
+
+ 
+ 
+  
+  
+
+
+
+
+  
+
+  
+</section>
+
+
+<footer>
+  <p>For any further information or plugin development requests contact <a href = "mailto: abc@example.com"><strong>vpinna@pre-construct.com</strong></a></p>
+  <p>If not stated otherwise, all content is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/"> Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)</a>.</p>
+
+
+
+
+  </footer>
+
+</body>
+</html>

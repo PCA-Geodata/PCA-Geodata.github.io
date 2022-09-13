@@ -92,14 +92,14 @@
         <about> PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.
 		
 		It is a component of the new DRS/GIS integrated data management system, and provides a set of tool that help definings groups, entities, periods, sub-periods and phases for all the archeological features.</about>
-        <homepage>https://github.com/</homepage>
+        <homepage>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>
 		<file_name>pca_postex.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_postex/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
-        <tracker>https://github.com/PCA-Geodata/</tracker>
-        <repository>https://github.com/PCA-Geodata/</repository>
+        <tracker>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin/issues</tracker>
+        <repository>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin</repository>
         <download_url>https://PCA-Geodata.github.io/downloads/pca_postex/pca_postex.zip</download_url>
         <deprecated>False</deprecated>
         <experimental>False</experimental>

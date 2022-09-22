@@ -62,7 +62,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-09-17</update_date>
+		<update_date>2022-09-22</update_date>
 		<tags>PCA, Geomax, survey, processing, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -108,6 +108,49 @@
 		<tags>PCA, python, archaeology, post-excavation, phasing, grouping, periods</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
+	
+	
+	<pyqgis_plugin name="Snap Point" version="1.0">
+        <description>This plugin snaps a selected point to the closest point of a feature from a defined layer.</description>
+        <about> This plugin snaps a selected point to the closest point of a feature from a defined layer. It can be used during survey Processing to snap Drawing Points to sections or Archaeological features.</about>
+        <homepage>https://github.com/PCA-Geodata/</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>snap_point.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/snap_point/icon.png</icon>
+        <author_name>Valerio Pinna</author_name>
+        <tracker>https://github.com/PCA-Geodata/</tracker>
+        <repository>https://github.com/PCA-Geodata/</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/snap_point/snap_point.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2022-09-22</update_date>
+		<tags>PCA, snapping, digitizing, geometry, point</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
+
+
+	<pyqgis_plugin name="Snap Line" version="1.0">
+        <description>This plugin snaps a selected line to the closest point of a feature from a defined layer.</description>
+        <about> This plugin snaps a selected line to the closest point of a feature from a defined layer. It can be used during survey Processing to snap Sections to Archaeological features.</about>
+        <homepage>https://github.com/</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>snap_line.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/snap_line/icon.png</icon>
+        <author_name>Valerio Pinna</author_name>
+        <tracker>https://github.com/</tracker>
+        <repository>https://github.com/</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/snap_line/snap_line.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2022-09-22</update_date>
+		<tags>PCA, snapping, digitizing, geometry, line	</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
+
 
 
 <!-- add here the next plugin metadata	 -->

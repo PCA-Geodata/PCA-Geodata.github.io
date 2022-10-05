@@ -23,7 +23,7 @@
 
 
 
-    <pyqgis_plugin name="Replace Geometry" version="1.3">
+    <pyqgis_plugin name="Replace Geometry" version="1.5">
         <description>Replaces a geometry keeping the attributes unchanged.</description>
         <about> The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format.</about>
         <homepage>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</homepage>
@@ -38,7 +38,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-09-04</update_date>
+		<update_date>2022-10-05</update_date>
 		<tags>PCA, attribute, digitizing, geometry, point, polygon, polyline, replace</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

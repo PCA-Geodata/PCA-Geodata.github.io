@@ -23,7 +23,7 @@
 
 
 
-    <pyqgis_plugin name="Replace Geometry" version="1.5">
+    <pyqgis_plugin name="Replace Geometry" version="2">
         <description>Replaces a geometry keeping the attributes unchanged.</description>
         <about> The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format.</about>
         <homepage>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git</homepage>
@@ -38,7 +38,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-10-05</update_date>
+		<update_date>2022-10-09</update_date>
 		<tags>PCA, attribute, digitizing, geometry, point, polygon, polyline, replace</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -125,13 +125,13 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-09-25</update_date>
+		<update_date>2022-10-09</update_date>
 		<tags>PCA, snapping, digitizing, geometry, point</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
 
-	<pyqgis_plugin name="Snap Line" version="1.01">
+	<pyqgis_plugin name="Snap Line" version="1.02">
         <description>This plugin snaps a selected line to the closest points of a feature from a defined layer.</description>
         <about> This plugin snaps a selected line to the closest points of a feature from a defined layer. It can be used during survey Processing to snap Sections to Archaeological features.</about>
         <homepage>https://github.com/PCA-Geodata/Snap-Line-QGIS-Plugin</homepage>
@@ -146,7 +146,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-09-25</update_date>
+		<update_date>2022-10-09</update_date>
 		<tags>PCA, snapping, digitizing, geometry, line	</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

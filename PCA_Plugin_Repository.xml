@@ -43,7 +43,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="PCA Geomax Survey Processing" version="1.06">
+	<pyqgis_plugin name="PCA Geomax Survey Processing" version="1.07">
         <description>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</description>
         <about> PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.
 
@@ -62,7 +62,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-09-30</update_date>
+		<update_date>2022-10-10</update_date>
 		<tags>PCA, Geomax, survey, processing, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -87,7 +87,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Post-excavation" version="1.02.1">
+	<pyqgis_plugin name="PCA Post-excavation" version="1.03">
         <description>This plugin provide a set of tools to generates trenches for archaeological evaluations.</description>
         <about> PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.
 		
@@ -104,7 +104,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-09-27</update_date>
+		<update_date>2022-10-10</update_date>
 		<tags>PCA, python, archaeology, post-excavation, phasing, grouping, periods</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

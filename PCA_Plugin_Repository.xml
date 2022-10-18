@@ -130,7 +130,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="PCA DRS Spreadsheet Checks" version="1.0">
+	<pyqgis_plugin name="PCA DRS Spreadsheet Checks" version="1.01">
         <description>This plugin provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.</description>
         <about> This plugin provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.
 			It is a component of the new DRS/GIS integrated data management system, and provides a set of tool that help definings duplicated context numbers or recorded features not matching the site plan.</about>
@@ -146,7 +146,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-10-14</update_date>
+		<update_date>2022-10-18</update_date>
 		<tags>PCA, DRS, spreadsheet, postexcavation, checks, duplicates	</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

@@ -66,7 +66,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Post-excavation" version="1.23">
+	<pyqgis_plugin name="PCA Post-excavation" version="1.25">
         <description>PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.</description>
         <about> PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.
 		

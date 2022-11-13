@@ -151,6 +151,25 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
+	<pyqgis_plugin name="Search Value" version="1.0">
+        <description>A dock widget for searching values on the layers attribute table and for zooming on the relative geometries on the map.</description>
+        <about>This plugin opens a dock widget that allows searching a value on a layer attribute table. When a value is found, the tool zooms to the relative geometry on the map.</about>
+        <homepage>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>search_value.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/search_value/icon.png</icon>
+        <author_name>Valerio Pinna</author_name>
+        <tracker>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin/issues</tracker>
+        <repository>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/search_value/search_value.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2022-11-13</update_date>
+		<tags>PCA, search, zoom, attribute table</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
 
 
 <!-- add here the next plugin metadata	 -->

@@ -19,6 +19,7 @@ To add the repository to QGIS: "Plugins" - "Manage and install plugins..." - "Se
 
 
 <p>Name: PCA QGIS Plugin Repository</p>
+
 URL: https://pca-geodata.github.io/PCA_Plugin_Repository.xml 
 
 

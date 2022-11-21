@@ -178,7 +178,7 @@
         <homepage>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>
-		<file_name>search_value.zip</file_name>
+		<file_name>pca_report_description.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_report_description/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
         <tracker>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin/issues</tracker>

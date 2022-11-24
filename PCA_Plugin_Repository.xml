@@ -151,7 +151,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="Search Value" version="1.01">
+	<pyqgis_plugin name="Search Value" version="1.03">
         <description>A dock widget for searching values on the layers attribute table and for zooming on the relative geometries on the map.</description>
         <about>This plugin opens a dock widget that allows searching a value on a layer attribute table. When a value is found, the tool zooms to the relative geometry on the map.</about>
         <homepage>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</homepage>
@@ -166,29 +166,30 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-11-19</update_date>
+		<update_date>2022-11-22</update_date>
 		<tags>PCA, search, zoom, attribute table</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
 
-	<pyqgis_plugin name="PCA Report Generator" version="0.1">
-        <description>..........</description>
-        <about>............... .</about>
-        <homepage>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</homepage>
+	<pyqgis_plugin name="PCA Report Generator" version="1.0">
+        <description>The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report.</description>
+        <about>PCA Report Description is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
+				The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report. The feature(s) that wants to be described can be recalled by choosing the value (context number or group name) from a dropdown list, or simply by selecting them in the map.</about>
+        <homepage>https://github.com/PCA-Geodata/PCA-Report-Description-QGIS-Plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>
 		<file_name>pca_report_description.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_report_description/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
-        <tracker>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin/issues</tracker>
-        <repository>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</repository>
+        <tracker>https://github.com/PCA-Geodata/PCA-Report-Description-QGIS-Plugin/issues</tracker>
+        <repository>https://github.com/PCA-Geodata/PCA-Report-Description-QGIS-Plugin</repository>
         <download_url>https://PCA-Geodata.github.io/downloads/pca_report_description/pca_report_description.zip</download_url>
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-11-21</update_date>
-		<tags>PCA, report, string, attribute table</tags>
+		<update_date>2022-11-24</update_date>
+		<tags>python, PCA, report, groups, attribute table, string, description, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 

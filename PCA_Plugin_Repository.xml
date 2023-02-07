@@ -198,8 +198,8 @@
 	
 	<pyqgis_plugin name="PCA DRS Context Sheet Printer" version="1.0">
         <description>This plugin generate a online version of a recording sheet (context, ctemation, skeleton)ready for printing.</description>
-        <about>PCA Report Description is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
-				This plugin generate a online version of a recording sheet (context, ctemation, skeleton)ready for printing.</about>
+        <about>PCA DRS Context Sheet Printer is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
+				This plugin generate a online version of a recording sheet (context, ctemation, skeleton) ready for printing.</about>
         <homepage>https://github.com/PCA-Geodata/PCA-Report-Description-QGIS-Plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>

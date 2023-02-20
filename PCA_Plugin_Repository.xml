@@ -218,7 +218,7 @@
 	</pyqgis_plugin>
 	
 	
-	<pyqgis_plugin name="Check Duplicated Features" version="1.0">
+	<pyqgis_plugin name="Check Duplicated Features" version="1.01">
         <description>This plugin checks for duplicated features on a layer.</description>
         <about>This plugin checks for duplicated features on a layer. Optionally, you can increment the check's factors (e.g. geometry and attribute value). After the check is possible to decide if immediately delete the features result of the check.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>

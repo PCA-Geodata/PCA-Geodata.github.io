@@ -197,15 +197,15 @@
 	</pyqgis_plugin>
 	
 	<pyqgis_plugin name="PCA DRS Context Sheet Printer" version="1.01">
-        <description>This plugin generate a online version of a recording sheet (context, ctemation, skeleton)ready for printing.</description>
+        <description>This plugin generate a online version of a recording sheet (context, cremation, skeleton)ready for printing.</description>
         <about>PCA DRS Context Sheet Printer is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
-				This plugin generate a online version of a recording sheet (context, ctemation, skeleton) ready for printing.</about>
+				This plugin generate a online version of a recording sheet (context, cremation, skeleton) ready for printing.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>
 		<file_name>pca_drs_context_sheet_printer.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_drs_context_sheet_printer/icon.png</icon>
-        <author_name>Valerio Pinna (Pre-COnstruct Archaeology)</author_name>
+        <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
         <tracker>https://github.com/PCA-Geodata/</tracker>
         <repository>https://github.com/PCA-Geodata/</repository>
         <download_url>https://PCA-Geodata.github.io/downloads/pca_drs_context_sheet_printer/pca_drs_context_sheet_printer.zip</download_url>
@@ -214,6 +214,27 @@
 		<uploaded_by>Valerio Pinna</uploaded_by>
 		<update_date>2023-02-08</update_date>
 		<tags>python, PCA, DRS, Context, printing</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
+	
+	
+	<pyqgis_plugin name="Check Duplicated Features" version="1.0">
+        <description>This plugin checks for duplicated features on a layer.</description>
+        <about>This plugin checks for duplicated features on a layer. Optionally, you can increment the check's factors (e.g. geometry and attribute value). After the check is possible to decide if immediately delete the features result of the check.</about>
+        <homepage>https://github.com/PCA-Geodata/</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>check_duplicated_features.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/check_duplicated_features/icon.png</icon>
+        <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
+        <tracker>https://github.com/PCA-Geodata/.../issues</tracker>
+        <repository>https://github.com/PCA-Geodata/</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/check_duplicated_features/check_duplicated_features.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2023-02-20</update_date>
+		<tags>python, PCA, geometry, duplicate</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 

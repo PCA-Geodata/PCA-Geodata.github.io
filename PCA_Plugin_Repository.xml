@@ -66,7 +66,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Post-excavation" version="2.13">
+	<pyqgis_plugin name="PCA Post-excavation" version="2.14">
         <description>PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.</description>
         <about> PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.
 		
@@ -83,7 +83,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-02-14</update_date>
+		<update_date>2023-02-20</update_date>
 		<tags>PCA, python, archaeology, post-excavation, phasing, grouping, periods</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

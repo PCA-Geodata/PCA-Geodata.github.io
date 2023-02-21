@@ -239,7 +239,7 @@
 	</pyqgis_plugin>
 	
 	
-	<pyqgis_plugin name="Check Duplicated Features" version="0.1">
+	<pyqgis_plugin name="Geopackage to SHP Exporter" version="0.1">
         <description>This plugin exports each layer contained in a Geopackage to a separate shapefile.</description>
         <about>This plugin exports each layer contained in a Geopackage to a separate shapefile. Empty and no-geometric layers will be discarded.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>

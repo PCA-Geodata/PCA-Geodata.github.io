@@ -239,7 +239,7 @@
 	</pyqgis_plugin>
 	
 	
-	<pyqgis_plugin name="Geopackage to SHP Exporter" version="0.1">
+	<pyqgis_plugin name="Geopackage to SHP Exporter" version="1.0">
         <description>This plugin exports each layer contained in a Geopackage to a separate shapefile.</description>
         <about>This plugin exports each layer contained in a Geopackage to a separate shapefile. Empty and no-geometric layers will be discarded.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
@@ -254,12 +254,12 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-02-21</update_date>
+		<update_date>2023-02-25</update_date>
 		<tags>python, PCA, gpkg, export</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="Add Save All Edits Shortcut" version="1.0">
+	<pyqgis_plugin name="Add Save All Edits Shortcut" version="1.01">
         <description>This plugin add a shortcut for quick access to the option Save Edits for All Layers.</description>
         <about>This plugin add a shortcut for quick access to the option Save Edits for All Layers.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
@@ -274,7 +274,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-02-23</update_date>
+		<update_date>2023-02-25</update_date>
 		<tags>python, shortcut, saveall, PCA</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

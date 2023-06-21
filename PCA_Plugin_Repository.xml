@@ -175,7 +175,7 @@
 	</pyqgis_plugin>
 
 
-	<pyqgis_plugin name="PCA Report Generator" version="1.0">
+	<pyqgis_plugin name="PCA Report Generator" version="1.01">
         <description>The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report.</description>
         <about>PCA Report Description is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
 				The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report. The feature(s) that wants to be described can be recalled by choosing the value (context number or group name) from a dropdown list, or simply by selecting them in the map.</about>
@@ -191,7 +191,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-11-24</update_date>
+		<update_date>2023-06-21</update_date>
 		<tags>python, PCA, report, groups, attribute table, string, description, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

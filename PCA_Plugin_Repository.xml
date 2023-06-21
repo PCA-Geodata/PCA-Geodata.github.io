@@ -22,7 +22,7 @@
 
 
 	
-	<pyqgis_plugin name="PCA Geomax Survey Processing" version="2.0">
+	<pyqgis_plugin name="PCA Geomax Survey Processing" version="2.01">
         <description>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</description>
         <about> PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.
 
@@ -41,7 +41,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-05-16</update_date>
+		<update_date>2023-06-21</update_date>
 		<tags>PCA, Geomax, survey, processing, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -196,7 +196,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="PCA DRS Context Sheet Printer" version="1.01">
+	<pyqgis_plugin name="PCA DRS Context Sheet Printer" version="1.02">
         <description>This plugin generate a online version of a recording sheet (context, cremation, skeleton)ready for printing.</description>
         <about>PCA DRS Context Sheet Printer is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
 				This plugin generate a online version of a recording sheet (context, cremation, skeleton) ready for printing.</about>
@@ -212,7 +212,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-02-08</update_date>
+		<update_date>2023-06-20</update_date>
 		<tags>python, PCA, DRS, Context, printing</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

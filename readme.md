@@ -2,7 +2,7 @@
 
 
 
-<h1><img src="images/pca_logo_icon.jpg"  width="100" height="100"/>      PCA QGIS Plugin Repository</h1>
+<h1><img src="images/PCA_logo_300dpi_square.png"  width="100" height="100">      PCA QGIS Plugin Repository</h1>
 
 
 

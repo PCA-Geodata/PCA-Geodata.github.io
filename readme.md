@@ -35,7 +35,7 @@ URL: https://pca-geodata.github.io/PCA_Plugin_Repository.xml
 
 
 
-For any further information or plugin development requests contact <a href = "mailto: abc@example.com"><strong>vpinna@pre-construct.com</strong></a></p> or open a Feature Request in this page.
+For any further information or plugin development requests contact <a href = "mailto: abc@example.com"><strong>geospatialdata@pre-construct.com</strong></a></p> or open a Feature Request in this page.
 
 ## License
 <strong>All content is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/"> Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)</a>.<strong>

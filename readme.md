@@ -2,7 +2,9 @@
 
 
 
-<h1><img src="images/PCA logo 300dpi square.jpg"  width="100" height="100"/>      PCA QGIS Plugin Repository</h1>
+<h1><img src="/images/pca_logo_icon.jpg"  width="100" height="100"/>      PCA QGIS Plugin Repository</h1>
+
+
 
 This is the official Pre-Construct Archaeology Ltd QGIS Plugin repository. 
 The repository can be accessed online on  <a href="https://pca-geodata.github.io">PCA QGIS Plugin Repository</a></strong>

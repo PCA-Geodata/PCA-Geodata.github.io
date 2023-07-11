@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <plugins>
-    <pyqgis_plugin name="Raster to GPKG converter" version="1.1">
+    <pyqgis_plugin name="Raster to GPKG converter" version="1.2">
         <description>This plugin converts any raster to a GeoPackage. It builds also the piramids.</description>
         <about> This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </about>
         <homepage>www.gisisfun.com</homepage>
@@ -15,7 +15,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2022-10-03</update_date>
+		<update_date>2023-07-11</update_date>
 		<tags>PCA, raster, piramids, gpkg, conversion. orthophoto</tags>
 		<category>Raster</category>
     </pyqgis_plugin>

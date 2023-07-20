@@ -22,7 +22,7 @@
 
 
 	
-	<pyqgis_plugin name="PCA Geomax Survey Processing" version="2.01">
+	<pyqgis_plugin name="PCA Geomax Survey Processing" version="2.02">
         <description>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</description>
         <about> PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.
 
@@ -41,7 +41,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-06-21</update_date>
+		<update_date>2023-07-20</update_date>
 		<tags>PCA, Geomax, survey, processing, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

@@ -13,7 +13,7 @@ It contains the plugins the GeoSpatial Data Department built for specific intern
 
 
 
-## How to use it on QGIS bbb
+## How to use it on QGIS
 The repository can be also added to the Plugin Repositories on the QGIS Plugin Manager.
 
 

@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+<style> <!--CSS for styling of webpage with defined classes and ids-->
 * {
   box-sizing: border-box;
 }
@@ -20,10 +20,6 @@
   suffix: " ";
 }
 
-ul {
-  list-style: thumbs;
-}
-
 name {
  padding: 5px;
 }
@@ -32,9 +28,11 @@ titlename {
  padding: 10px;
 }
 
+/*styling for body of page*/
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #1C4165;
+  background-color: #1C4165; 
+  overflow-wrap: normal;
 }
 
 /* Style the header */
@@ -42,7 +40,7 @@ header {
   <!-- background-color: #00008B; -->
   padding: 3px;
   width: 100%;
-  <!-- height: 100px; -->
+  <!--height: auto;-->
   text-align: left;
   font-size: 45px;
   color: white;
@@ -52,7 +50,7 @@ header {
 nav {
   float: left;
   width: 15%;
-  height: 8000px; /* only for demonstration, should be removed */
+  height: 3600px; /* only for demonstration, should be removed */
   background-color: #1C4165;;
   padding: 20px;
 }
@@ -64,11 +62,12 @@ nav ul {
   font-size: 15px;
 }
 
+/*set styling parameters for article odd*/
 article_odd{
-  font-size: 2vm;
+  font-size: 20px;
   float: left;
   padding: 20px;
-  width: 85%;
+  width: 70%;
   background-color: #193A5B;
   color: white;
 <!--   height: 300px; /* only for demonstration, should be removed */ -->
@@ -95,11 +94,12 @@ a:active {
   text-decoration: underline;
 }
 
+/*set styling parameters for article even*/
 article_even {
-  font-size: 2vm;
+  font-size: 20px;
   float: left;
   padding: 20px;
-  width: 85%;
+  width: 70%;
   background-color:  #1C4165;
   color: white;
 <!--   height: 300px; /* only for demonstration, should be removed */ -->
@@ -129,25 +129,27 @@ footer {
     height: auto;
   }
 }
-
+/*changes styling of article odd and even when screen limit is a maximum of 700px*/
 @media (max-width: 700px) {
   article_odd, article_even, nav ul {
     font-size: 3.5vw;
   }
 }
-
+/*changes styling of footer when screen limit is a maximum of 700px*/
 @media (max-width: 700px) {
    footer {
     font-size: 2.5vw;
   }
 }
-
-@media (max-width: 700px) {
+/*changes styling of header when screen limit is a maximum of 850px*/
+@media (max-width: 850px) {
   header {
-    font-size: 4vw;
+    font-size: 3vw;
+	text-align: left;
+
   }
 }
-
+/*Styling for button*/
 .btn {
   background-color: #91d70f;
   border: none;
@@ -162,42 +164,131 @@ footer {
   background-color: #89CA0E;
 }
 
- <!-- Add icon library -->
- 
- <!-- Comment to remove-->
+/* style the tab */
+.tab {
+	overflow: hidden;
+	background-color:#FFFFFF;
+	display: flex; /* flex utilises uneccesary whitespace */
+	width: 330px;
+	}
+	
+/*style buttons inside tab */
+.tablinks {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 10px;
+	transition: 0.3s;
+	font-size: 17px;
+	flex-grow: 1; 
+	flex-srhink: 1;
+	flex-basis: auto;
+	}
+	
+/*changes styling of tab when screen limit is a maximum of 700px*/	
+@media (max-width: 700px) {
+.tab {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-basis: flex-wrap;
+	}
+}
+
+/*changes styling of tablinks when screen limit is a maximum of 700px*/	
+@media (max-width: 700px) {
+.tablinks {
+	display: flex;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: auto;
+	align-content: space-evenly;
+	flex-basis: flex-wrap;
+	}
+}
+
+/*change background color of buttons on hover*/
+.tablinks:hover {
+	background-color: #ddd;
+	}
+	
+/*active tablink changes colour*/
+.tablinks:focus {
+	background-color: #D3D3D3;
+	}
+	
+/*style the tab content*/
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border 1px solid #ccc;
+	border-top: none;
+	animation: fadeEffect 1s;
+	}
+
+/*Fade effect switching between tabs*/	
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity 1;}
+	}
+	
+/*logos set an image size*/
+.logos {
+	width:130px;
+	height:130px;
+	}
+	
+/*size of logos change when max width of screen is 700px*/	
+@media (max-width: 700px) {
+.logos {
+	max-width:65px;
+	max-height:65px;
+	}
+}
+	
+
+
+	
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Add icon library -->
 
 </style>
 </head>
 <body>
 
-<header>
+<header
   <div id="container" style="white-space:nowrap; background-color: #223B5B;">
-    <div id="image" style="display:inline;">
-        
-    
-		<a href="index.html"><img src="images/PCA_logo_300dpi_square.png" width="75" height="75"/></a>
-	
-	
-	
+    <!--PCA logo in header of webpage-->
+	<div id="image" style="display:inline;">
+	<a href="https://www.pre-construct.com">
+		<img class="logos" src="Q:\GEOSPATIAL_DATA_ADMIN\Resources\PCA logos\small - to be printed less than 5cm\png\PCA_logo_round_600x600.png"/>
+		</a>
 	</div>
-    <div id="texts" style="display:inline; white-space:nowrap;"> 
-        <strong>PCA QGIS Plugin Repository</strong>
+	<!--QGIS logo in header of webpage-->
+	<div id="image" style="display:inline;" >
+	<a href="https://www.qgis.org/en/site/">
+        <img class="logos" src="images/qgis-icon_anita02.png"/>
+		</a>
+	</div>
+	<!--title text and styling-->
+    <div class ="header" id="texts" style="display:inline; white-space:nowrap;"> 
+        <h2 align="center" style="font-family:verdana">PCA QGIS Plugin Repository</h2>
     </div>
 	
-	<div id="image" style="display:inline;" >
-        <img src="images/qgis-icon_anita02.png"  width="75" height="75"/>
-    </div>
-
-</div>
+  </div>
 </header>
 <aside>
-<nav>
+<nav> <!--nav bar-->
     <ul>
 	  <li><a href="index_pag_2.html"><h1><strong>How to use on QGIS</strong></h1></a></li>
 	  <br><br>
-	  
-	  <li><a href="index.html#PCA Geomax Survey Processing"><img src="downloads/pca_geomax_survey_processing/icon.png" width="25" height="25"/><name>PCA Geomax Survey Processing</name></a></li>
+	  <!--nav bar with images, descriptions and quick links on page-->
+	  <li><a href="index.html#PCA Geomax Survey Processing"><img src="downloads/pca_geomax_survey_processing/icon.png" style="width:25px;height:25px"/><name>PCA Geomax Survey Processing</name></a></li>
 	  <br>
 	  <li><a href="index.html#PCA Post-excavation"><img src="downloads/pca_post_excavation/icon.png" width="25" height="25"/><name>PCA Post-excavation</name></a></li>
 	  <br>
@@ -227,273 +318,423 @@ footer {
   </aside>
 <section>
 
-<article_odd>
-    <div id='PCA Geomax Survey Processing'><a name='PCA Geomax Survey Processing'></a></div>
-	<h1><img src="downloads/pca_geomax_survey_processing/icon.png" width="100" height="100"/><titlename>PCA Geomax Survey Processing</titlename></h1>
-	<p>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</p>
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/pca_geomax_survey_processing/PCA_Geomax_Survey_Processing.zip"download>Download</button></a>
+<article_odd> <!--plugin title, image and description-->
+    <div id='PCA Geomax Survey Processing'><a name='PCA Geomax Survey Processing'></a>
+	<h1><img class="logos"  src="downloads/pca_geomax_survey_processing/icon.png" width="100" height="100"/><titlename>PCA Geomax Survey Processing</titlename></h1> 
+		<p>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</p>
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.<br>
-	
 
-	  It is a component of the new DRS/GIS integrated data management system, and it is based both on the new Geomax codelist system and on the raw survey data exported in shapefile format. <br>
-	  
-	  <br>
-	  The current version of the plugin is compatible with the Geomax codelist version draft 4.2. A dedicated help in the toolbar provides more inforamtions and detailed use procedure. </p>
-        <br>
-		<p><strong>Toolbar: </strong> <img src="downloads/pca_geomax_survey_processing/PCA_geomax_plugin_toolbar_v3.png" style="max-width:35%;height:auto;"/></p>
-		<p><strong>Version: </strong> 2.03</p>
-		<p><strong>Author: </strong>Valerio Pinna</p>
+	<div class="tab"> <!-- implement tabs for Version, About and Links. Refer to this example for comments  -->
+	<button class="tablinks" onclick="opentab(event, 'Version')" id="defaultOpen">Version</button>
+	<button class="tablinks" onclick="opentab(event, 'About')">About</button>
+	<button class="tablinks" onclick="opentab(event, 'Links')">Links</button>
+	<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/pca_geomax_survey_processing/PCA_Geomax_Survey_Processing.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+	<!--Download button with image and green color to direct download link-->
+	</div>
+	
+	<div id="Version" class="tabcontent"> <!--Tab content for Version-->
+		<p><strong>Version: </strong> 2.03 </p>
+		<p> <strong>Last update:</strong> 2023-07-28 </P>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-	    <p><strong>Bug tracker: </strong> <a href= https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues>https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues</a></p>
-        <p><strong>Repository: </strong> <a href= https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin>https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues</a> </p>
+	</div>
+	
+	<div id="About" class="tabcontent"> <!--Tab content for About-->
+	<p>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</p>
+	<p>It is a component of the new DRS/GIS integrated data management system, and it is based both on the new Geomax codelist system and on the raw survey data exported in shapefile format.</p>
+	<p>The current version of the plugin is compatible with the Geomax codelist version draft 4.2. A dedicated help in the toolbar provides more inforamtions and detailed use procedure.</p>
+	<p><strong>Toolbar:</strong> <img src="downloads/pca_geomax_survey_processing/PCA_geomax_plugin_toolbar_v3.png" style="max-width:35%;height:auto;"/></p>
+	<!--image link for toolbar-->
+	</div>
+	
+	<div id="Links" class="tabcontent"> <!--Tab content for Links-->
+		<p><strong>Bug tracker: </strong> <a href= https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues>https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues</a></p>
+		<p><strong>Repository: </strong> <a href= https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin>https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues</a> </p>
+	</div>
+	
+	<script>
+	function opentab(event,tabName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i <tabcontent.length; i++) {
+	tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	tablinks[i].className = tablinks[i].className.replace("active",
+	"");
+	}document.getElementById(tabName).style.display = "block";
+	evt.currentTarget.className += "active";
+	}
+	document.getElementById("defaultOpen").click();
+	</script>
+	<!--Javascript for tab functionality-->
 
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2023-07-28</p>
-		<p><strong>Tags:</strong>PCA, Geomax, survey, processing, DRS</p>
+	</div>
   </article_odd>
 
 
 
 <article_even>  
      <div id='PCA Post-excavation'><a name='PCA Post-excavation'></a></div>
-	<h1><img src="downloads/pca_post_excavation/icon.png" width="100" height="100"/><titlename>PCA Post-excavation</titlename></h1>
+	<h1><img class="logos" src="downloads/pca_post_excavation/icon.png" width="100" height="100"/><titlename>PCA Post-excavation</titlename></h1>
 	<p>PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase</p>
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/pca_post_excavation/pca_post_excavation.zip"download>Download</button></a>
+	
+	<div class="tab">
+	<button class="tablinks" onclick="opentab(event, 'Version2')" id="defaultOpen2">Version</button>
+	<button class="tablinks" onclick="opentab(event, 'About2')">About</button>
+	<button class="tablinks" onclick="opentab(event, 'Links2')">Links</button>
+	<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/pca_post_excavation/pca_post_excavation.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+	<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.<br><br>
-	  It is a component of the new DRS/GIS integrated data management system, and provides a set of tools that help definings groups, entities, periods, sub-periods and phases for all the archeological features.</p>
-        <br>
-		<p><strong>Toolbar: </strong> <img src="downloads/pca_post_excavation/PCA_postexcavation_toolbar.png" style="max-width:45%;height:auto;"/></p>
+	
+	<div id="Version2" class="tabcontent">
 		<p><strong>Version: </strong>3.04</p>
+		<p><strong>Last update:</strong> 2023-06-22</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna (Pre-Construct Archaeology)</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin/issues>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin/issues</a></p>
+		<!--Tab content assigned to "Version" tab-->
+	</div>
+	
+	<div id="About2" class="tabcontent">
+		<p>PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.</p>
+		<p>It is a component of the new DRS/GIS integrated data management system, and provides a set of tools that help definings groups, entities, periods, sub-periods and phases for all the archeological features.</p>
+		<p><strong>Toolbar: </strong> <img src="downloads/pca_post_excavation/PCA_postexcavation_toolbar.png" style="max-width:45%;height:auto;"/></p>
+		<!--Tab content assigned to "About" tab-->
+	</div>
+	
+	<div id="Links2" class="tabcontent">
+	<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin/issues>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin/issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2023-06-22</p>
-		<p><strong>Tags: </strong>PCA, python, archaeology, post-excavation, phasing, grouping, periods</p>
+		<!--Tab content assigned to "Links" tab-->
+	</div>
+	
 </article_even>
 
 <article_odd>  
      <div id='PCA DRS Context Checks'><a name='PCA DRS Context Checks'></a></div>
-	<h1><img src="downloads/pca_drs_context_checks/icon.png" width="100" height="100"/><titlename>PCA DRS Context Checks</titlename></h1>
-	<p>This is an internal QGIS Plugin that provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.</p>
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/pca_drs_context_checks/pca_drs_context_checks.zip"download>Download</button></a>
+	<h1><img class="logos" src="downloads/pca_drs_context_checks/icon.png" width="100" height="100"/><titlename>PCA DRS Context Checks</titlename></h1>
+	<p>This is an internal QGIS Plugin that provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.</p> 
+	
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version3')" id="defaultOpen3">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About3')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links3')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/pca_drs_context_checks/pca_drs_context_checks.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>This plugin provides a quick access to an array of queries built for check the PCA DRS Context spreadsheet during the post-excavation phase.<br><br>
-	It is a component of the new DRS/GIS integrated data management system.<br> 
-	It provides a dockable panel that allows to run some checks, as missing context sheets, duplicated context numbers and recorded features not matching the site plan.</p>
-	<br>
-	<p><strong>Version: </strong> 2.11</p>
-	<p><strong>Author: </strong>Valerio Pinna</p>
-	<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-	<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin/issues>https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin/issues</a></p>
-	<p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin>https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin</a></p>
-	<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-	<p><strong>Last update:</strong> 2023-01-17</p>
-	<p><strong>Tags: </strong>PCA, DRS, spreadsheet, postexcavation, checks, duplicates</p>
+	
+	<div id="Version3" class="tabcontent">
+		<p><strong>Version: </strong> 2.11</p>
+		<p><strong>Last update:</strong> 2023-01-17</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
+		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
+	</div>
+	
+	<div id="About3" class="tabcontent">
+		<p>This plugin provides a quick access to an array of queries built for check the PCA DRS Context spreadsheet during the post-excavation phase</p>
+		<p>It is a component of the new DRS/GIS integrated data management system.</p>
+		<p>It provides a dockable panel that allows to run some checks, as missing context sheets, duplicated context numbers and recorded features not matching the site plan.</p>
+	</div>
+	
+	<div id="Links3" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin/issues>https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin/issues</a></p>
+		<p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin>https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin</a></p>
+	</div>
+	
 </article_odd>
 
 <article_even>  
      <div id='Evaluation Trenches Generator'><a name='Evaluation Trenches Generator'></a></div>
-	<h1><img src="downloads/eval_trench_gener/icon.png" width="100" height="100"/><titlename>Evaluation Trenches Generator</titlename></h1>
+	<h1><img class="logos" src="downloads/eval_trench_gener/icon.png" width="100" height="100"/><titlename>Evaluation Trenches Generator</titlename></h1>
 	<p>This plugin provides a set of tools to generates trenches for archaeological evaluations.</p>
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/eval_trench_gener/eval_trench_gener.zip"download>Download</button></a>
+	
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version4')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About4')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links4')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/eval_trench_gener/eval_trench_gener.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>This plugin provide a set of tools to generates trenches for archaeological evaluations and to generate the necessary files to configurate the GNSS setout.
- </p>
-        <br>
-		<p><strong>Toolbar: </strong> <img src="downloads/eval_trench_gener/Evaluation_trench_generator_toolbar.png" style="max-width:35%;height:auto;"/></p>
+	
+	<div id="Version4" class="tabcontent">
 		<p><strong>Version: </strong> 2.10</p>
+		<p><strong>Last update:</strong> 2023-07-24</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin/issues>https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin/issues</a></p>
+	</div>
+	
+	<div id="About4" class="tabcontent">
+		<p>This plugin provide a set of tools to generates trenches for archaeological evaluations and to generate the necessary files to configurate the GNSS setout.</p>
+		<p><strong>Toolbar: </strong> <img src="downloads/eval_trench_gener/Evaluation_trench_generator_toolbar.png" style="max-width:35%;height:auto;"/></p>
+	</div>
+	
+	<div id="Links4" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin/issues>https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin/issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin>https://github.com/PCA-Geodata/Evaluation-Trenches-Generator-QGIS-plugin</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2023-07-24</p>
-		<p><strong>Tags: </strong>PCA, python, archaeology, evaluation, trench, setout</p>
+	</div>
 </article_even>
 
 <article_odd>
     <div id='Raster to GPKG converter'><a name='Raster to GPKG converter'></a></div>
-	<h1><img src="downloads/raster_to_gpkg_converter/icon.png" width="100" height="100"/><titlename>Raster to GPKG converter</titlename></h1>
-	<p>This plugin converts any raster to a GeoPackage. It builds also the piramids.</p>
+	<h1><img class="logos" src="downloads/raster_to_gpkg_converter/icon.png" width="100" height="100"/><titlename>Raster to GPKG converter</titlename></h1>
+	<p>This plugin converts any raster to a GeoPackage. It builds also the pyramids.</p>
 	
-		<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip"download>Download</button></a>
-		</div>
-			<br> 
-		<p <strong>About</strong> <br>This plugin converts any raster to a new GeoPackage raster layer with calculated piramids. </p>
-			<br>
-			<p><strong>Version: </strong> 1.2</p>
-			<p><strong>Author: </strong>Valerio Pinna</p>
-			<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-			<p><strong>Bug tracker: </strong> <a href=https://github.com/...>GitHub Issues</a></p>
-			<p><strong>Repository: </strong> <a href=https://github.com/...>GitHub</a></p>
-			<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-			<p><strong>Last update:</strong> 2023-07-11</p>
-			<p><strong>Tags:</strong>PCA, raster, piramids, gpkg, conversion, orthophoto</p>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version5')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About5')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links5')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/raster_to_gpkg_converter/raster_to_gpkg_converter.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
+	</div>
+	
+	<div id="Version5" class="tabcontent">
+		<p><strong>Version: </strong> 1.2</p>
+		<p><strong>Last update:</strong> 2023-07-11</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
+		<p><strong>Author: </strong>Valerio Pinna</p>
+		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
+	</div>
+	
+	<div id="About5" class="tabcontent">
+		<p>This plugin converts any raster to a new GeoPackage raster layer with calculated pyramids</p>
+	</div>
+	
+	<div id="Links5" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/...>GitHub Issues</a></p>
+		<p><strong>Repository: </strong> <a href=https://github.com/...>GitHub</a></p>
+	</div>
 </article_odd>
 
 <article_even>
     <div id='Replace Geometry'><a name='Replace Geometry'></a></div>
-	<h1><img src="downloads/replace_geometry/icon.png" width="100" height="100"/><titlename>Replace Geometry</titlename></h1>
+	<h1><img class="logos" src="downloads/replace_geometry/icon.png" width="100" height="100"/><titlename>Replace Geometry</titlename></h1>
 	<p>Replaces a geometry keeping the attributes unchanged.</p>
 
 	<p  colour= 'red' ><strong>Moved on the official </strong> <a href=https://plugins.qgis.org/plugins/replace_geometry/>QGIS Python Plugins Repository</a></p>
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/replace_geometry/replace_geometry.zip"download>Download</button></a>
+	
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version6')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About6')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links6')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/replace_geometry/replace_geometry.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>The plugin replaces a geometry keeping the attributes unchanged. It work with any type of geometry and any vector layer format. </p>
-        <br>
+	
+	<div id="Version6" class="tabcontent">
 		<p><strong>Version: </strong> 2.0</p>
+		<p><strong>Last update:</strong> 2022-10-09</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
+	</div>
+	
+	<div id="About6" class="tabcontent">
+	<p>The plugin replaces a geometry keeping the attributes unchanged.</p> 
+	<p>It work with any type of geometry and any vector layer format.</p>
+	</div>
+	
+	<div id="Links6" class="tabcontent">
         <p><strong>Bug tracker: </strong> <a href=https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin/issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin.git>https://github.com/ValPinnaSardinia/Replace-Geometry-Plugin</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2022-10-09</p>
-		<p><strong>Tags: </strong>PCA, attribute, digitizing, geometry, point, polygon, polyline, replace</p>
+	</div>
+	
 </article_even>
   
 <article_odd>
     <div id='Snap Point'><a name='Snap Point'></a></div>
-	<h1><img src="downloads/snap_point/icon.png" width="100" height="100"/><titlename>Snap Point</titlename></h1>
+	<h1><img class="logos" src="downloads/snap_point/icon.png" width="100" height="100"/><titlename>Snap Point</titlename></h1>
 	<p>This plugin snaps a selected point to the closest point of a feature from a defined layer.</p>
 	
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/snap_point/snap_point.zip"download>Download</button></a>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version7')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About7')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links7')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/snap_point/snap_point.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>This plugin snaps a selected point to the closest point of a feature from a defined layer. It can be used during survey Processing to snap Drawing Points to sections or Archaeological features. </p>
-        <br>
+	
+	<div id="Version7" class="tabcontent">
 		<p><strong>Version: </strong> 1.02</p>
+		<p><strong>Last update:</strong> 2022-10-09</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Snap-Point-QGIS-Plugin/issues>GitHub Issues</a></p>
+	</div>
+	
+	<div id="About7" class="tabcontent">
+		<p>This plugin snaps a selected point to the closest point of a feature from a defined layer.</p> 
+		<p>It can be used during survey Processing to snap Drawing Points to sections or Archaeological features.</p>
+	</div>
+	
+	<div id="Links7" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Snap-Point-QGIS-Plugin/issues>GitHub Issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/Snap-Point-QGIS-Plugin>GitHub</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2022-10-09</p>
-		<p><strong>Tags: </strong>PCA, snapping, digitizing, geometry, point</p>
+	</div>
 </article_odd>
   
 <article_even>
     <div id='Snap Line'><a name='Snap Line'></a></div>
-	<h1><img src="downloads/snap_line/icon.png" width="100" height="100"/><titlename>Snap Line</titlename></h1>
+	<h1><img class="logos" src="downloads/snap_line/icon.png" width="100" height="100"/><titlename>Snap Line</titlename></h1>
 	<p>This plugin snaps a selected line to the closest point of a feature from a defined layer.</p>
 	
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/snap_line/snap_line.zip"download>Download</button></a>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version8')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About8')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links8')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/snap_line/snap_line.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>This plugin snaps a selected line to the closest points of a feature from a defined layer. It can be used during survey Processing to snap Sections to Archaeological features.</p>
-        <br>
+	
+	<div id="Version8" class="tabcontent">
 		<p><strong>Version: </strong> 1.02</p>
+		<p><strong>Last update:</strong> 2022-10-09</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Snap-Line-QGIS-Plugin/issues>GitHub Issues</a></p>
+	</div>
+	
+	<div id="About8" class="tabcontent">
+		<p>This plugin snaps a selected line to the closest points of a feature from a defined layer. It can be used during survey Processing to snap Sections to Archaeological features.</p>
+	</div>
+	
+	<div id="Links8" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Snap-Line-QGIS-Plugin/issues>GitHub Issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/Snap-Line-QGIS-Plugin>GitHub</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2022-10-09</p>
-		<p><strong>Tags: </strong>PCA, snapping, digitizing, geometry, line</p>
+	</div>
+	
 </article_even>
 
 <article_odd>
     <div id='Search Value'><a name='Search Value'></a></div>
-	<h1><img src="downloads/search_value/icon.png" width="100" height="100"/><titlename>Search Value</titlename></h1>
+	<h1><img class="logos" src="downloads/search_value/icon.png" width="100" height="100"/><titlename>Search Value</titlename></h1>
 	<p>A dock widget for searching values on the layers attribute table and for zooming on the relative geometries on the map.</p>
 	
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/search_value/search_value.zip"download>Download</button></a>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version9')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About9')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links9')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/search_value/search_value.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>This plugin opens a dock widget that allows searching a value on a layer attribute table. When a value is found, the tool zooms to the relative geometry on the map.</p>
-        <br>
+	
+	<div id="Version9" class="tabcontent">
 		<p><strong>Version: </strong> 1.06</p>
+		<p><strong>Last update:</strong> 2023-02-25</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Search-Value-QGIS-Plugin/issues>GitHub Issues</a></p>
+	</div>
+	
+	<div id="About9" class="tabcontent">
+		<p>This plugin opens a dock widget that allows searching a value on a layer attribute table. When a value is found, the tool zooms to the relative geometry on the map.</p>
+	</div>
+	
+	<div id="Links9" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/Search-Value-QGIS-Plugin/issues>GitHub Issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/Search-Value-QGIS-Plugin>GitHub</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2023-02-25</p>
-		<p><strong>Tags: </strong>PCA, search, zoom, attribute table</p>
+	</div>
 </article_odd>
 
 <article_even>
     <div id='PCA DRS Context Sheet Printer'><a name='PCA DRS Context Sheet Printer'></a></div>
-	<h1><img src="downloads/pca_drs_context_sheet_printer/icon.png" width="100" height="100"/><titlename>PCA DRS Context Sheet Printer</titlename></h1>
+	<h1><img class="logos" src="downloads/pca_drs_context_sheet_printer/icon.png" width="100" height="100"/><titlename>PCA DRS Context Sheet Printer</titlename></h1>
 	<p>This plugin generate a online version of a recording sheet (context, cremation, skeleton)ready for printing.</p>
 	
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/pca_drs_context_sheet_printer/pca_drs_context_sheet_printer.zip"download>Download</button></a>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version10')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About10')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links10')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/pca_drs_context_sheet_printer/pca_drs_context_sheet_printer.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>PCA DRS Context Sheet Printer is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.<br>
-				<br>This plugin generate a online version of a recording sheet (context, cremation, skeleton) ready for printing.</p>
-        <br>
+	
+	<div id="Version10" class="tabcontent">
 		<p><strong>Version: </strong> 1.50</p>
+		<p><strong>Last update:</strong> 2023-06-26</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/issues>GitHub Issues</a></p>
+	</div>
+	
+	<div id="About10" class="tabcontent">
+		<p>PCA DRS Context Sheet Printer is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.</p>
+		<p>This plugin generate a online version of a recording sheet (context, cremation, skeleton) ready for printing</p>
+	</div>
+	
+	
+	<div id="Links10" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/issues>GitHub Issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/GitHub >GitHub</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2023-06-26</p>
-		<p><strong>Tags: </strong>python, PCA, DRS, Context, printing</p>
+	</div>
 </article_even>
 
 
 <article_odd>
     <div id='Check Duplicated Features'><a name='Check Duplicated Features'></a></div>
-	<h1><img src="downloads/check_duplicated_features/icon.png" width="100" height="100"/><titlename>Check Duplicated Features</titlename></h1>
+	<h1><img class="logos" src="downloads/check_duplicated_features/icon.png" width="100" height="100"/><titlename>Check Duplicated Features</titlename></h1>
 	<p>This plugin checks for duplicated features on a layer.</p>
 	
-	<div>  
-		<button class="btn"><i class="fa fa-download"></i> 
-		<a href="downloads/check_duplicated_features/check_duplicated_features.zip"download>Download</button></a>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version11')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About11')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links11')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/check_duplicated_features/check_duplicated_features.zip';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
 	</div>
-	<br> 
-	<p><strong>About</strong> <br>This plugin checks for duplicated features on a layer. Optionally, you can increment the check's factors (e.g. geometry and attribute value). After the check is possible to decide if immediately delete the features result of the check.</p>
-        <br>
+	
+	<div id="Version11" class="tabcontent">
 		<p><strong>Version: </strong> 1.01</p>
+		<p><strong>Last update:</strong> 2023-02-20</p>
+		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
 		<p><strong>Author: </strong>Valerio Pinna</p>
 		<p><strong>Author email: </strong><a href = "mailto: vpinna@pre-construct.com">vpinna@pre-construct.com</a></p>
-        <p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/.../issues>GitHub Issues</a></p>
+	</div>
+	
+	<div id="About11" class="tabcontent">
+		<p>This plugin checks for duplicated features on a layer.</p> 
+		<p>Optionally, you can increment the check's factors (e.g. geometry and attribute value).</p>
+		<p>After the check is possible to decide if immediately delete the features result of the check.</p>
+	</div>
+	
+	<div id="Links11" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/.../issues>GitHub Issues</a></p>
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/...>GitHub</a></p>
-		<p><strong>Uploaded by: </strong> Valerio Pinna</p>
-		<p><strong>Last update:</strong> 2023-02-20</p>
-		<p><strong>Tags: </strong>python, PCA, geometry, duplicate</p>
+	</div>	
 </article_odd>
 
 
-<!-- add here the next article/plugin
- -->
+<!-- add here the next article/plugin following previous examples for reference-->
+<!--Rename id's and button names eg.version,about with next number-->
+<!--
+<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='';">Download&nbsp;<img src ="Q:\GEOSPATIAL_DATA_ADMIN\QGIS Repo Page test\PCA-Geodata.github.io\images\-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		
+	</div>
+	
+	<div id="Version" class="tabcontent">
+	</div>
+	
+	<div id="About" class="tabcontent">
+	</div>
+	
+	<div id="Links" class="tabcontent">
+	</div>
+	-->
   
 </section>
 
 <footer>
   <p>For any further information or plugin development requests contact <a href = "mailto: geospatialdata@pre-construct.com"><strong>geospatialdata@pre-construct.com</strong></a></p>
 	<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />If not stated otherwise, all content is licensed under  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+	<p>Website design by: <strong>Valerio Pinna</strong> and <strong>Isaac Thompson</strong>
 </footer>
 
 </body>

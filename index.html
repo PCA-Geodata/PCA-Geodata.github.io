@@ -353,23 +353,7 @@ footer {
 		<p><strong>Repository: </strong> <a href= https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin>https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin/issues</a> </p>
 	</div>
 	
-	<script>
-	function opentab(event,tabName) {
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i <tabcontent.length; i++) {
-	tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-	tablinks[i].className = tablinks[i].className.replace("active",
-	"");
-	}document.getElementById(tabName).style.display = "block";
-	evt.currentTarget.className += "active";
-	}
-	document.getElementById("defaultOpen").click();
-	</script>
-	<!--Javascript for tab functionality-->
+	
 
 	</div>
   </article_odd>
@@ -739,4 +723,23 @@ footer {
 </footer>
 
 </body>
+
+
+<script>
+	function opentab(event,tabName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i <tabcontent.length; i++) {
+	tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	tablinks[i].className = tablinks[i].className.replace("active",
+	"");
+	}document.getElementById(tabName).style.display = "block";
+	evt.currentTarget.className += "active";
+	}
+	document.getElementById("defaultOpen").click();
+	</script>
+	<!--Javascript for tab functionality-->
 </html>

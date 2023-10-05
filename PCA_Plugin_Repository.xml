@@ -300,10 +300,10 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="Mergin Projects Permits Adderr" version="1.0">
+	<pyqgis_plugin name="Mergin Projects Permits Adder" version="1.0">
         <description>This is a QGIS plugin for easy integration and management of Mergin projects permits.</description>
         <about>Mergin Projects Permit Adder is a QGIS plugin that streamlines the addition and management of Mergin projects in QGIS settings (QGIS.ini). It prevents duplication, allows folder path updates, and offers an intuitive user interface for seamless project integration.</about>
-        <homepage>https://github.com/ithompson3629/Coordinate_Plotter_QGIS_Plugin</homepage>
+        <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>
 		<file_name>mergin_projects_permits_adder.zip</file_name>

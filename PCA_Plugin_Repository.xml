@@ -175,7 +175,7 @@
 	</pyqgis_plugin>
 
 
-	<pyqgis_plugin name="PCA Report Generator" version="1.03">
+	<pyqgis_plugin name="PCA Report Generator" version="1.01">
         <description>The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report.</description>
         <about>PCA Report Description is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
 				The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report. The feature(s) that wants to be described can be recalled by choosing the value (context number or group name) from a dropdown list, or simply by selecting them in the map.</about>
@@ -191,7 +191,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-09-19</update_date>
+		<update_date>2023-06-21</update_date>
 		<tags>python, PCA, report, groups, attribute table, string, description, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -278,6 +278,28 @@
 		<tags>python, shortcut, saveall, PCA</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
+	
+	
+	<pyqgis_plugin name="Coordinate Plotter" version="1.0">
+        <description>This plugin plots coordinates from user-inputted values.</description>
+        <about>This plugin plots coordinates from user-inputted values.</about>
+        <homepage>https://github.com/ithompson3629/Coordinate_Plotter_QGIS_Plugin</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>coordinate_plotter.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/coordinate_plotter/icon.png</icon>
+        <author_name>Isaac Thompson (Pre-Construct Archaeology)</author_name>
+        <tracker>https://github.com/ithompson3629/Coordinate_Plotter_QGIS_Plugin/issues</tracker>
+        <repository>https://github.com/ithompson3629/Coordinate_Plotter_QGIS_Plugin</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/coordinate_plotter/coordinate_plotter.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Isaac Thompson</uploaded_by>
+		<update_date>2023-10-05</update_date>
+		<tags>python, coordinates, PCA, Pre-construct Archaeology, point</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
+
 
 <!-- add here the next plugin metadata	 -->
 	

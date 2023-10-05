@@ -14,6 +14,18 @@
   box-sizing: border-box;
 }
 
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 3900px; /* only for demonstration, should be removed */
+  background-color: #1C4165;;
+  padding: 20px;
+}
+
+
+
+
 @counter-style thumbs {
   system: cyclic;
   symbols: "\1F44D";
@@ -46,14 +58,7 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 15%;
-  height: 3600px; /* only for demonstration, should be removed */
-  background-color: #1C4165;;
-  padding: 20px;
-}
+
 
 /* Style the list inside the menu */
 nav ul {
@@ -309,7 +314,10 @@ footer {
 	  <li><a href="index.html#PCA DRS Context Sheet Printer"><img src="downloads/pca_drs_context_sheet_printer/icon.png" width="25" height="25"/><name>PCA DRS Context Sheet Printer</name></a></li>
 	  <br>
 	  <li><a href="index.html#Check Duplicated Features"><img src="downloads/check_duplicated_features/icon.png" width="25" height="25"/><name>Check Duplicated Features</name></a></li>
+	  <br>
+	  <li><a href="index.html#Coordinate Plotter"><img src="downloads/coordinate_plotter/icon.png" width="25" height="25"/><name>Coordinate Plotter</name></a></li>
 	  
+	
 	
 	  <br>
 
@@ -706,6 +714,37 @@ footer {
         <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/...>GitHub</a></p>
 	</div>	
 </article_odd>
+
+<article_even>
+    <div id='Coordinate Plotter'><a name='Coordinate Plotter'></a></div>
+	<h1><img class="logos" src="downloads/coordinate_plotter/icon.png" width="100" height="100"/><titlename>Coordinate Plotter</titlename></h1>
+	<p>This plugin checks for duplicated features on a layer.</p>
+	
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, 'Version12')" id="defaultOpen">Version</button>
+		<button class="tablinks" onclick="opentab(event, 'About12')">About</button>
+		<button class="tablinks" onclick="opentab(event, 'Links12')">Links</button>
+		<button style="background-color:MediumSeaGreen;" class="tablinks" onclick="window.location.href='downloads/coordinate_plotter/coordinate_plotter.zip';">Download&nbsp;<img src = "images/-file-download_90117.png" alt="Download" style="width:20px;height:20px;vertical-align:middle;"/></button>
+		<!-- implement tabs  -->
+	</div>
+	
+	<div id="Version12" class="tabcontent">
+		<p><strong>Version: </strong> 1.0</p>
+		<p><strong>Last update:</strong> 2023-10-05</p>
+		<p><strong>Uploaded by: </strong> Isaac Thompson</p>
+		<p><strong>Author: </strong>Isaac Thompson</p>
+		<p><strong>Author email: </strong><a href = "mailto: ithompson@pre-construct.com">ithompson@pre-construct.com</a></p>
+	</div>
+	
+	<div id="About12" class="tabcontent">
+		<p>This plugin plots coordinates from user-inputted values.</p> 
+	</div>
+	
+	<div id="Links12" class="tabcontent">
+		<p><strong>Bug tracker: </strong> <a href=https://github.com/PCA-Geodata/.../issues>GitHub Issues</a></p>
+        <p><strong>Repository: </strong> <a href=https://github.com/PCA-Geodata/...>GitHub</a></p>
+	</div>	
+</article_even>
 
 
 <!-- add here the next article/plugin following previous examples for reference-->

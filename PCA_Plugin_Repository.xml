@@ -280,7 +280,7 @@
 	</pyqgis_plugin>
 	
 	
-	<pyqgis_plugin name="Coordinate Plotter" version="1.0">
+	<pyqgis_plugin name="Coordinate Plotter" version="1.01">
         <description>This plugin plots coordinates from user-inputted values.</description>
         <about>This plugin plots coordinates from user-inputted values.</about>
         <homepage>https://github.com/ithompson3629/Coordinate_Plotter_QGIS_Plugin</homepage>
@@ -295,7 +295,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Isaac Thompson</uploaded_by>
-		<update_date>2023-10-05</update_date>
+		<update_date>2023-10-06</update_date>
 		<tags>python, coordinates, PCA, Pre-construct Archaeology, point</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

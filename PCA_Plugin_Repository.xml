@@ -20,8 +20,6 @@
 		<category>Raster</category>
     </pyqgis_plugin>
 
-
-	
 	<pyqgis_plugin name="PCA Geomax Survey Processing" version="2.03">
         <description>PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.</description>
         <about> PCA Geomax Survey Processing is an internal QGIS Plugin specifically built for PCA survey data management and processing purposes.
@@ -88,7 +86,6 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	
 	<pyqgis_plugin name="Snap Point" version="1.01">
         <description>This plugin snaps a selected point to the closest point of a feature from a defined layer.</description>
         <about> This plugin snaps a selected point to the closest point of a feature from a defined layer. It can be used during survey Processing to snap Drawing Points to sections or Archaeological features.</about>
@@ -108,7 +105,6 @@
 		<tags>PCA, snapping, digitizing, geometry, point</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
-
 
 	<pyqgis_plugin name="Snap Line" version="1.02">
         <description>This plugin snaps a selected line to the closest points of a feature from a defined layer.</description>
@@ -174,7 +170,6 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-
 	<pyqgis_plugin name="PCA Report Generator" version="1.01">
         <description>The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report.</description>
         <about>PCA Report Description is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
@@ -217,7 +212,6 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	
 	<pyqgis_plugin name="Check Duplicated Features" version="1.01">
         <description>This plugin checks for duplicated features on a layer.</description>
         <about>This plugin checks for duplicated features on a layer. Optionally, you can increment the check's factors (e.g. geometry and attribute value). After the check is possible to decide if immediately delete the features result of the check.</about>
@@ -237,8 +231,7 @@
 		<tags>python, PCA, geometry, duplicate</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
-	
-	
+
 	<pyqgis_plugin name="Geopackage to SHP Exporter" version="1.0">
         <description>This plugin exports each layer contained in a Geopackage to a separate shapefile.</description>
         <about>This plugin exports each layer contained in a Geopackage to a separate shapefile. Empty and no-geometric layers will be discarded.</about>
@@ -279,7 +272,6 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	
 	<pyqgis_plugin name="Coordinate Plotter" version="1.01">
         <description>This plugin plots coordinates from user-inputted values.</description>
         <about>This plugin plots coordinates from user-inputted values.</about>
@@ -300,7 +292,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="Mergin Projects Permits Adder" version="1.0">
+	<pyqgis_plugin name="Mergin Projects Permits Adder" version="1.0.1">
         <description>This is a QGIS plugin for easy integration and management of Mergin projects permits.</description>
         <about>Mergin Projects Permit Adder is a QGIS plugin that streamlines the addition and management of Mergin projects in QGIS settings (QGIS.ini). It prevents duplication, allows folder path updates, and offers an intuitive user interface for seamless project integration.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
@@ -315,7 +307,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-10-05</update_date>
+		<update_date>2023-11-13</update_date>
 		<tags>python, Mergin, PCA, ini, merginmaps, synchronisation</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

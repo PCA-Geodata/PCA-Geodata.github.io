@@ -313,6 +313,26 @@
 	</pyqgis_plugin>
 
 
+	<pyqgis_plugin name="PCA Finds Distribution Generator" version="1.0">
+        <description>This plugin helps generating a finds distribution point layer from a .csv finds catalogue.</description>
+        <about>This plugin helps generating a finds distribution point layer from a .csv finds catalogue. Optionally, it can be generated also a second layer that contains the finds aggregated by a field (usually Cut or Context number) and summed values for weight and finds quantity.</about>
+        <homepage>https://github.com/PCA-Geodata/</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>pca_finds_distribution_generator.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/pca_finds_distribution_generator.png</icon>
+        <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
+        <tracker>https://github.com/PCA-Geodata/PCA-Geodata.github.io/issues</tracker>
+        <repository>https://github.com/PCA-Geodata/PCA-Geodata.github.io</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/pca_finds_distribution_generator/pca_finds_distribution_generator.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2023-11-18</update_date>
+		<tags>python, pca, finds, distribution, aggregate, pottery, lithic, catalogue, csv</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
+
 <!-- add here the next plugin metadata	 -->
 	
 	

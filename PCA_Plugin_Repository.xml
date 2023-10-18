@@ -313,7 +313,7 @@
 	</pyqgis_plugin>
 
 
-	<pyqgis_plugin name="PCA Finds Distribution Generator" version="1.0">
+	<pyqgis_plugin name="PCA Finds Distribution Generator" version="1.1">
         <description>This plugin helps generating a finds distribution point layer from a .csv finds catalogue.</description>
         <about>This plugin helps generating a finds distribution point layer from a .csv finds catalogue. Optionally, it can be generated also a second layer that contains the finds aggregated by a field (usually Cut or Context number) and summed values for weight and finds quantity.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>

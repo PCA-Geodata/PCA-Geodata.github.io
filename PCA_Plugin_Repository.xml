@@ -232,7 +232,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="Geopackage to SHP Exporter" version="1.0">
+	<pyqgis_plugin name="Geopackage to SHP Exporter" version="1.01">
         <description>This plugin exports each layer contained in a Geopackage to a separate shapefile.</description>
         <about>This plugin exports each layer contained in a Geopackage to a separate shapefile. Empty and no-geometric layers will be discarded.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
@@ -247,7 +247,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-02-25</update_date>
+		<update_date>2024-10-24</update_date>
 		<tags>python, PCA, gpkg, export</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

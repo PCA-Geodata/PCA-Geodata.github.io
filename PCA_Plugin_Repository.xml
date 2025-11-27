@@ -293,6 +293,26 @@
 		<tags>python, pca, finds, distribution, aggregate, pottery, lithic, catalogue, csv</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
+	
+	<pyqgis_plugin name="UK National Grid Map Reference Finder" version="1.0">
+        <description>Zooms the map canvas to a given UK National Grid Reference and briefly highlights the location.</description>
+        <about>This plugin allows you to quickly navigate to any location using a UK National Grid Map Reference (e.g. TQ 17304 91389). After entering the grid reference, the map canvas automatically zooms to the corresponding position and displays a temporary blinking marker to clearly highlight the location for a few seconds. This is especially useful when working from written coordinates in reports, emails, or field notes and needing to locate them rapidly in QGIS.</about>
+        <homepage>https://github.com/PCA-Geodata/</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+		<file_name>uk_grid_reference_finder_icon.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/uk_nat_grid_map_reference_finder/uk_grid_reference_finder_icon.png</icon>
+        <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
+        <tracker>https://github.com/PCA-Geodata/PCA-Geodata.github.io/issues</tracker>
+        <repository>https://github.com/PCA-Geodata/PCA-Geodata.github.io</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/uk_nat_grid_map_reference_finder/uk_nat_grid_map_reference_finder.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2024-01-29</update_date>
+		<tags>python, pca, UK, grid, reference, finder, coordinates</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
 
 <!-- add here the next plugin metadata	 -->
 	

@@ -313,11 +313,40 @@
 		<tags>python, pca, UK, grid, reference, finder, coordinates</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
+	
+	<pyqgis_plugin name="PCA Geometry Quality Control" version="1.0">
+        <description>Checks all vector layers in the project for geometry issues and highlights problems to help ensure clean, reliable GIS data.</description>
+        <about>This tool scans all vector layers in your QGIS project and identifies geometries that may cause problems during analysis or map production.
+		 It automatically detects null, empty, and invalid geometries, summarises issues in an easy-to-read panel, and provides quick actions to review, select, or remove problematic features.
+
+		 Layers can be excluded from checks using a simple layer variable (skip_geometry_check = true), and full reports can be copied or exported for documentation.
+
+		 Designed to support clean, consistent datasets across large or complex GIS projects.
+		</about>
+        <homepage>https://github.com/PCA-Geodata/</homepage>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
+		<file_name>pca_geometry_quality_control.zip</file_name>
+        <icon> https://PCA-Geodata.github.io/downloads/pca_geometry_quality_control/pca_geometry_quality_control_icon.png</icon>
+        <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
+        <tracker>https://github.com/PCA-Geodata/PCA-Geodata.github.io/issues</tracker>
+        <repository>https://github.com/PCA-Geodata/PCA-Geodata.github.io</repository>
+        <download_url>https://PCA-Geodata.github.io/downloads/pca_geometry_quality_control/uk_nat_grid_map_reference_finder.zip</download_url>
+        <deprecated>False</deprecated>
+        <experimental>False</experimental>
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2024-01-29</update_date>
+		<tags>python, geometry, validation, quality control, null geometries, PCA, Pre-Construct Archaeology</tags>
+		<category>Vector</category>
+	</pyqgis_plugin>
 
 <!-- add here the next plugin metadata	 -->
 	
 	
 </plugins>
+
+
 
 
 

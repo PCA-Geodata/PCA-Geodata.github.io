@@ -213,12 +213,13 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="Add Save All Edits Shortcut" version="1.02">
+	<pyqgis_plugin name="Add Save All Edits Shortcut" version="1.03">
         <description>This plugin add a shortcut for quick access to the option Save Edits for All Layers.</description>
         <about>This plugin add a shortcut for quick access to the option Save Edits for All Layers.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>add_save_all_edits_shortcut.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/add_save_all_edits_shortcut/icon.png</icon>
         <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>

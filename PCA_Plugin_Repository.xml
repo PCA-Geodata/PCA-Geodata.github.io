@@ -310,7 +310,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2024-01-29</update_date>
+		<update_date>2025-11-25</update_date>
 		<tags>python, pca, UK, grid, reference, finder, coordinates</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -337,7 +337,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2024-01-29</update_date>
+		<update_date>2025-11-29</update_date>
 		<tags>python, geometry, validation, quality control, null geometries, PCA, Pre-Construct Archaeology</tags>
 		<category>Vector</category>
 	</pyqgis_plugin>

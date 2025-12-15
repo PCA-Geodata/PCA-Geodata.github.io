@@ -85,7 +85,6 @@
 		<tags>PCA, python, archaeology, post-excavation, phasing, grouping, periods</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
-	
 
 	<pyqgis_plugin name="PCA DRS Context Checks" version="2.15">
         <description>This is an internal QGIS Plugin that provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.</description>
@@ -294,7 +293,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="UK National Grid Map Reference Finder" version="1.0">
+	<pyqgis_plugin name="UK National Grid Map Reference Finder" version="1.0.1">
         <description>Zooms the map canvas to a given UK National Grid Reference and briefly highlights the location.</description>
         <about>This plugin allows you to quickly navigate to any location using a UK National Grid Map Reference (e.g. TQ 17304 91389). After entering the grid reference, the map canvas automatically zooms to the corresponding position and displays a temporary blinking marker to clearly highlight the location for a few seconds. This is especially useful when working from written coordinates in reports, emails, or field notes and needing to locate them rapidly in QGIS.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
@@ -309,7 +308,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2025-11-25</update_date>
+		<update_date>2025-12-15</update_date>
 		<tags>python, pca, UK, grid, reference, finder, coordinates</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

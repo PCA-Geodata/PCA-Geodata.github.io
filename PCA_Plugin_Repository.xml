@@ -86,7 +86,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA DRS Context Checks" version="2.15">
+	<pyqgis_plugin name="PCA DRS Context Checks" version="2.50">
         <description>This is an internal QGIS Plugin that provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.</description>
         
 		<about> This plugin provides a quick access to an array of queries built for check the PCA DRS Context spreadsheet during the post-excavation phase.
@@ -95,7 +95,8 @@
 		
 		<homepage>https://github.com/PCA-Geodata/PCA-DRS-Context-Checks-QGIS-plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>pca_drs_context_checks.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_drs_context_checks/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
@@ -105,7 +106,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2024-03-18</update_date>
+		<update_date>2026-02-11</update_date>
 		<tags>PCA, DRS, spreadsheet, postexcavation, checks, duplicates	</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

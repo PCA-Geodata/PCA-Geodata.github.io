@@ -5,7 +5,8 @@
         <about> This plugin is an internal PCA QGIS plugin that converts any raster to a new GeoPackage raster layer with calculated piramids. </about>
         <homepage>https://github.com/PCA-Geodata</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>raster_to_gpkg_converter.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/raster_to_gpkg_converter/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
@@ -20,7 +21,7 @@
 		<category>Raster</category>
     </pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Geomax Survey Processing" version="2.21">
+	<pyqgis_plugin name="PCA Geomax Survey Processing" version="3.03">
 		<description>PCA Geomax Survey Processing is an internal QGIS plugin designed to manage and process PCA survey data efficiently.</description>
 		<about> PCA Geomax Survey Processing is an internal QGIS plugin created specifically for managing and processing PCA survey data.
 
@@ -29,7 +30,8 @@
 				The current version of the plugin supports Geomax Codelist version draft 4.2. A dedicated help section is available in the toolbar, offering more information and detailed usage instructions.</about>
 		<homepage>https://github.com/PCA-Geodata/PCA_Geomax_Survey_Processing_QGIS_Plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>PCA_Geomax_Survey_Processing.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_geomax_survey_processing/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
@@ -39,7 +41,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2025-03-03</update_date>
+		<update_date>2025-04-25</update_date>
 		<tags>PCA, Geomax, survey, processing, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

@@ -173,12 +173,13 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="Check Duplicated Features" version="1.01">
+	<pyqgis_plugin name="Check Duplicated Features" version="2.00">
         <description>This plugin checks for duplicated features on a layer.</description>
         <about>This plugin checks for duplicated features on a layer. Optionally, you can increment the check's factors (e.g. geometry and attribute value). After the check is possible to decide if immediately delete the features result of the check.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>check_duplicated_features.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/check_duplicated_features/icon.png</icon>
         <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
@@ -188,7 +189,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2023-02-20</update_date>
+		<update_date>2026-04-25</update_date>
 		<tags>python, PCA, geometry, duplicate</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

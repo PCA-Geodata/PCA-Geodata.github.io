@@ -118,7 +118,8 @@
         <about>This plugin opens a dock widget that allows searching a value on a layer attribute table. When a value is found, the tool zooms to the relative geometry on the map.</about>
         <homepage>https://github.com/PCA-Geodata/Search-Value-QGIS-plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>search_value.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/search_value/icon.png</icon>
         <author_name>Valerio Pinna</author_name>

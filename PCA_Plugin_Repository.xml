@@ -344,6 +344,49 @@
 		<tags>python, geometry, validation, quality control, null geometries, PCA, Pre-Construct Archaeology</tags>
 		<category>Vector</category>
 	</pyqgis_plugin>
+	
+	
+	
+	
+	
+	<pyqgis_plugin name="PCA Data Source Explorer" version="1.00">
+		<description>View and organise all data sources in a QGIS project. Groups layers by file location, highlights missing and external data, and separates database and online sources.</description>
+		
+		<about>This tool provides a structured overview of all data sources used in a QGIS project.
+		File-based layers are grouped by folder and file, making it easier to understand where data is stored and how it is organised.
+		Sources are classified to distinguish between data stored within the project folder, external files, and missing paths.
+
+		Single-layer formats such as shapefiles, CSV and raster files are displayed in a compact form, while multi-layer formats like GeoPackage and DXF are expanded to show their internal structure.
+		Database connections and online services are listed separately to keep non-file sources clearly identified.
+
+		The panel updates automatically when the project changes and allows quick access to file locations.
+		A text report can be generated and saved, including project name, project path, and the date and time of export.</about>
+		
+		<homepage>http://homepage</homepage>
+		<qgis_minimum_version>3.0</qgis_minimum_version>
+		<qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
+		
+		<file_name>pca_data_source_explorer.zip</file_name>
+		<icon>icons/pca_data_source_explorer_icon.png</icon>
+		
+		<author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
+		<tracker>http://bugs</tracker>
+		<repository>http://repo</repository>
+		<download_url>http://homepage</download_url>
+		
+		<deprecated>False</deprecated>
+		<experimental>False</experimental>
+		
+		<uploaded_by>Valerio Pinna</uploaded_by>
+		<update_date>2025-12-15</update_date>
+		
+		<tags>python, data sources, explorer, qgis, layers, files, geopackage, database</tags>
+		<category>Plugins</category>
+	</pyqgis_plugin>
+
+
+
 
 <!-- add here the next plugin metadata	 -->
 	

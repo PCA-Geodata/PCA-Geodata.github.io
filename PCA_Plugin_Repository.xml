@@ -318,7 +318,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="PCA Geometry Quality Control" version="1.0.01">
+	<pyqgis_plugin name="PCA Geometry Quality Control" version="1.2">
         <description>Checks all vector layers in the project for geometry issues and highlights problems to help ensure clean, reliable GIS data.</description>
         <about>This tool scans all vector layers in your QGIS project and identifies geometries that may cause problems during analysis or map production.
 		 It automatically detects null, empty, and invalid geometries, summarises issues in an easy-to-read panel, and provides quick actions to review, select, or remove problematic features.
@@ -340,7 +340,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2025-12-15</update_date>
+		<update_date>2026-05-16</update_date>
 		<tags>python, geometry, validation, quality control, null geometries, PCA, Pre-Construct Archaeology</tags>
 		<category>Vector</category>
 	</pyqgis_plugin>

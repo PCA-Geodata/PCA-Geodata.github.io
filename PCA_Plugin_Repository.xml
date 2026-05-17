@@ -156,8 +156,8 @@
 	</pyqgis_plugin>
 	
 	<pyqgis_plugin name="PCA DRS Context Sheet Printer" version="2.00">
-        <description>Generate clean printable PDF context sheets directly from the PCA DRS Context Database using native QGIS layouts.</description>
-        <about>PCA DRS Context Sheet Printer is an internal QGIS plugin developed for the PCA DRS/GIS integrated workflow. The plugin generates compact one-page printable PDF recording sheets directly from the DRS Context Database, including context, cremation, and skeleton records.</about>
+        <description>Generate clean printable PDF recording sheets directly from PCA DRS databases using native QGIS layouts.</description>
+        <about>PCA DRS Context Sheet Printer is an internal QGIS plugin developed for the PCA DRS/GIS integrated workflow. The plugin generates compact one-page printable PDF recording sheets directly from PCA DRS databases, including context, trench, cremation, and skeleton records, using fully native QGIS print layouts.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>4.99</qgis_maximum_version>
@@ -172,7 +172,7 @@
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
 		<update_date>2026-05-17</update_date>
-		<tags>python, PCA, DRS, Context, printing</tags>
+		<tags>python, PCA, DRS, context, trench, printing</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	

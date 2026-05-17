@@ -160,7 +160,8 @@
         <about>PCA DRS Context Sheet Printer is an internal QGIS plugin developed for the PCA DRS/GIS integrated workflow. The plugin generates compact one-page printable PDF recording sheets directly from the DRS Context Database, including context, cremation, and skeleton records.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>pca_drs_context_sheet_printer.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_drs_context_sheet_printer/icon.png</icon>
         <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>

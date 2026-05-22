@@ -88,7 +88,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA DRS Context Checks" version="2.51">
+	<pyqgis_plugin name="PCA DRS Context Checks" version="3.00">
         <description>This is an internal QGIS Plugin that provides a quick access to a array of queries built for check the PCA DRS Spreadsheet during the post-excavation phase.</description>
         
 		<about> This plugin provides a quick access to an array of queries built for check the PCA DRS Context spreadsheet during the post-excavation phase.
@@ -108,7 +108,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2026-04-25</update_date>
+		<update_date>2026-05-22</update_date>
 		<tags>PCA, DRS, spreadsheet, postexcavation, checks, duplicates	</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>
@@ -278,9 +278,9 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Finds Distribution Generator" version="1.3">
-        <description>This plugin helps generating a finds distribution point layer from a .csv finds catalogue.</description>
-        <about>This plugin helps generating a finds distribution point layer from a .csv finds catalogue. Optionally, it can be generated also a second layer that contains the finds aggregated by a field (usually Cut or Context number) and summed values for weight and finds quantity.</about>
+	<pyqgis_plugin name="PCA Finds Distribution Generator" version="2.00">
+        <description>Creates archaeological finds distribution layers from finds catalogues with optional grouped summaries for contexts, cuts, or other recording units.</description>
+        <about>This plugin helps create archaeological finds distribution layers directly from finds catalogues. It can also generate optional grouped summaries for contexts, cuts, or other recording units with combined finds quantities and weights. The tool is designed to simplify and speed up the preparation of finds distribution outputs while keeping workflows consistent and easy to manage.</about>
         <homepage>https://github.com/PCA-Geodata/</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
         <qgis_maximum_version>3.99</qgis_maximum_version>
@@ -293,7 +293,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2024-01-29</update_date>
+		<update_date>2026-05-22</update_date>
 		<tags>python, pca, finds, distribution, aggregate, pottery, lithic, catalogue, csv</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

@@ -451,12 +451,10 @@
 	</pyqgis_plugin>
 
 	<pyqgis_plugin name="PCA Export Phased Features" version="1.00">
-		<description>
-			Exports Features_for_PostEx polygons into grouped ESRI Shapefiles based on post-excavation phasing fields.
-		</description>
-		<about>This plugin exports Features_for_PostEx polygons into separate phased ESRI Shapefiles for post-excavation workflows. Includes export validation, geometry safety checks, export preview, QA logging, and QGIS 3/QGIS 4 compatibility support.</about>
-				
+		<description>Exports Features_for_PostEx polygons into grouped ESRI Shapefiles based on post-excavation phasing fields.</description>
+		<about>This plugin exports Features_for_PostEx polygons into separate phased ESRI Shapefiles for post-excavation workflows. Includes export validation, geometry safety checks, export preview, QA logging, and QGIS 3/QGIS 4 compatibility support.</about>	
         <homepage>https://github.com/PCA-Geodata/</homepage>
+
 		<qgis_minimum_version>3.10</qgis_minimum_version>
 		<qgis_maximum_version>4.99</qgis_maximum_version>
 		<supportsQt6>True</supportsQt6>

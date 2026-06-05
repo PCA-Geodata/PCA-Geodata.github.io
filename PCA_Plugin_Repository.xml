@@ -66,7 +66,7 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Post-excavation" version="4.01">
+	<pyqgis_plugin name="PCA Post-excavation" version="4.02">
         <description>Manage archaeological post-excavation data, update Interventions and DRS records, and prepare standardized exports directly within QGIS.</description>
         <about>about=PCA Post-Excavation is a QGIS plugin designed to support archaeological post-excavation workflows through a suite of productivity and data management tools. 
 		It helps maintain consistent Groups, Entities, Periods, Sub-Periods and Phases, update related datasets, and prepare information for reporting and analysis. 

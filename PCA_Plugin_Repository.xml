@@ -416,15 +416,15 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="PCA Fieldwalk Grid Generator" version="1.00">
+	<pyqgis_plugin name="PCA Fieldwalk Grid Generator" version="1.10">
 		<description>
-			Generate PCA fieldwalking hectare and 10 m grids from a site boundary layer.
+			Generate PCA fieldwalking hectare and custom collection grids from a site boundary layer.
 		</description>
 		<about>PCA Fieldwalk Grid Generator is a QGIS plugin developed for the rapid creation of standardised archaeological fieldwalking grids based on a site boundary.
 
-		 The tool generates a British National Grid aligned 100 m hectare grid together with an optional detailed 10 m collection grid. Generated grids are automatically labelled using a consistent PCA fieldwalking reference system and saved directly into the project GeoPackage with embedded PCA styles.
+		The tool generates a British National Grid aligned 100 m hectare grid together with an optional detailed collection grid using user-defined rectangular cell sizes. Generated grids are automatically labelled using a consistent PCA fieldwalking reference system and saved directly into the project GeoPackage with embedded PCA styles.
 
-		 The plugin is designed for geomaticians and archaeological GIS workflows where accurate, repeatable and spatially consistent survey grids are required for finds collection, fieldwalking survey, and spatial recording.
+		The plugin is designed for geomaticians and archaeological GIS workflows where accurate, repeatable and spatially consistent survey grids are required for finds collection, fieldwalking survey, and spatial recording.
 		</about>
 				
         <homepage>https://github.com/PCA-Geodata/</homepage>

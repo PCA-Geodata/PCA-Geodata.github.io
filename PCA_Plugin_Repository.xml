@@ -134,13 +134,18 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Report Generator" version="1.11">
-        <description>The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report.</description>
-        <about>PCA Report Description is an internal QGIS Plugin specifically built for the PCA post-excavation phase and can be considered as a component of the new DRS/GIS integrated data management system.
-				The plugin provides a dockable environment to help generate quick features description from DRS data that can be used on the report. The feature(s) that wants to be described can be recalled by choosing the value (context number or group name) from a dropdown list, or simply by selecting them in the map.</about>
+	<pyqgis_plugin name="PCA Report Description Generator" version="2.00">
+        <description>Generate archaeological report descriptions directly from DRS context records. Supports cuts, groups and individual contexts with dedicated templates for fills, masonry, skeletons, cremations, layers and structures.</description>
+        <about>PCA Report Description Generator creates draft archaeological report text directly from DRS context records within QGIS.
+
+				The plugin supports generation of Cut, Group and Context descriptions using dedicated templates tailored to individual archaeological record types, including fills, layers, masonry, skeletons, cremations and structures.
+
+				Descriptions are generated only from information recorded on the context sheet, helping maintain consistency between field records and reporting while allowing archaeologists to review and refine the final text before publication.
+		</about>
         <homepage>https://github.com/PCA-Geodata/PCA-Report-Description-QGIS-Plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>pca_report_description.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_report_description/icon.png</icon>
         <author_name>Valerio Pinna</author_name>
@@ -150,7 +155,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2024-05-289T11:11:00</update_date>
+		<update_date>2026-06-05</update_date>
 		<tags>python, PCA, report, groups, attribute table, string, description, DRS</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

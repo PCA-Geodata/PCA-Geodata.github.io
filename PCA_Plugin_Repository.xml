@@ -66,14 +66,16 @@
 		<category>Plugins</category>
 	</pyqgis_plugin>
 
-	<pyqgis_plugin name="PCA Post-excavation" version="3.21">
-        <description>PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.</description>
-        <about> PCA Post-excavation is an internal QGIS Plugin specifically built for the PCA post-excavation phase.
-		
-		It is a component of the new DRS/GIS integrated data management system, and provides a set of tools that help definings groups, entities, periods, sub-periods and phases for all the archeological features.</about>
+	<pyqgis_plugin name="PCA Post-excavation" version="4.00">
+        <description>Manage archaeological post-excavation data, update Interventions and DRS records, and prepare standardized exports directly within QGIS.</description>
+        <about>about=PCA Post-Excavation is a QGIS plugin designed to support archaeological post-excavation workflows through a suite of productivity and data management tools. 
+		It helps maintain consistent Groups, Entities, Periods, Sub-Periods and Phases, update related datasets, and prepare information for reporting and analysis. 
+		Developed by the PCA Geospatial Data Team for everyday archaeological GIS use.	
+		</about>
         <homepage>https://github.com/PCA-Geodata/PCA-PostExcavation-QGIS-Plugin</homepage>
         <qgis_minimum_version>3.10</qgis_minimum_version>
-        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <qgis_maximum_version>4.99</qgis_maximum_version>
+		<supportsQt6>True</supportsQt6>
 		<file_name>pca_post_excavation.zip</file_name>
         <icon> https://PCA-Geodata.github.io/downloads/pca_post_excavation/icon.png</icon>
         <author_name>Valerio Pinna (Pre-Construct Archaeology)</author_name>
@@ -83,7 +85,7 @@
         <deprecated>False</deprecated>
         <experimental>False</experimental>
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2024-03-18</update_date>
+		<update_date>2026-06-05</update_date>
 		<tags>PCA, python, archaeology, post-excavation, phasing, grouping, periods</tags>
 		<category>Plugins</category>
 	</pyqgis_plugin>

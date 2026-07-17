@@ -332,7 +332,7 @@
 		<category>Vector</category>
 	</pyqgis_plugin>
 	
-	<pyqgis_plugin name="PCA Data Source Explorer" version="1.00">
+	<pyqgis_plugin name="PCA Data Source Explorer" version="1.10">
 		<description>View and organise all data sources in a QGIS project. Groups layers by file location, highlights missing and external data, and separates database and online sources.</description>
 		
 		<about>This tool provides a structured overview of all data sources used in a QGIS project.
@@ -362,7 +362,7 @@
 		<experimental>False</experimental>
 		
 		<uploaded_by>Valerio Pinna</uploaded_by>
-		<update_date>2026-05-04</update_date>
+		<update_date>2026-07-17</update_date>
 		
 		<tags>python, data sources, explorer, qgis, layers, files, geopackage, database</tags>
 		<category>Plugins</category>
